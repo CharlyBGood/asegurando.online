@@ -1,0 +1,38 @@
+.hero {
+  background-color: #1e35bb;
+  padding: 3rem 2rem;
+  color: #ffffff;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #d0dcf7;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #44b0de;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 1.5rem;
+  font-family: 'Federo', sans-serif;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #3a9ecb;
+}
