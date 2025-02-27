@@ -4,12 +4,14 @@
 @theme {
   --color-bgBlue: #253878;
   --color-bgDarkBlue: #03070f;
-  --color-bgBlack: rgba(3, 7, 15, 0.81);
+  --color-Black: rgba(3, 7, 15, 0.81);
   --color-justGray: #7a7a7a;  
   --color-blueGray: #d3dde6;
   --color-lightBlue: #44b0de;
+  --color-lightBlueHover: #3a9ecb;
   --color-goldenNew: #f7d16e;
   --font-federo: "Federo", sans-serif;
+  --cta-btn-padding: 0.75rem 2rem;
 }
 
 
@@ -49,11 +51,9 @@ body,
   margin: 0;
   width: 100%;
   height: 100%;
-  font-family: "Federo", sans-serif;
-  color: var(--blgray);
+  font-family: "Federo", sans-serif;  
   font-size: 15px;
 }
-
 
 /*  TAILWIND CLASSES */
 

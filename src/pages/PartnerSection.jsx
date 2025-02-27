@@ -15,14 +15,12 @@ const PartnerSection = () => {
   ];
 
   return (
-    <section className="partner-section">
+    <section className="partner-section p-4">
       <div className="container">
         <h2>Nuestros socios:</h2>
-        <div className="partner-logos">
+        <div className="flex flex-wrap">
           {partners.map(partner => (
-            <div key={partner.id} className="partner-logo">
-              <img src={partner.logo} alt={partner.name} />
-            </div>
+            <img key={partner.id} src={partner.logo} alt={partner.name} />
           ))}
         </div>
       </div>

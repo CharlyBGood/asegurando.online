@@ -1,7 +1,6 @@
-import QuoteToolContainer from './QuoteToolContainer';
+// import QuoteToolContainer from './QuoteToolContainer';
 import HeroSection from './HeroSection';
-import PartnerSection from './PartnerSection';
-import '../stylesheets/HomePage.css';
+// import PartnerSection from './PartnerSection';
 import { Slideshow } from './Slideshow';
 
 const HomePage = () => {
@@ -12,7 +11,7 @@ const HomePage = () => {
         <HeroSection />
       </main>
       {/* <QuoteToolContainer /> */}
-      <PartnerSection />
+      {/* <PartnerSection /> */}
     </>
 
   );

@@ -1,8 +1,3 @@
-.partner-section {
-  background-color: #071022;
-  padding: 1.5rem 0;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -10,7 +5,6 @@
 }
 
 .partner-section h2 {
-  color: #d0dcf7;
   font-size: 1.25rem;
   font-weight: normal;
   margin-bottom: 1rem;
@@ -25,9 +19,7 @@
 }
 
 .partner-logo {
-  background-color: rgba(208, 220, 247, 0.7);
-  padding: 0.5rem;
-  border-radius: 4px;
+  
   width: 60px;
   height: 30px;
   display: flex;
