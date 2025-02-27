@@ -21,7 +21,7 @@ export const Slideshow = () => {
   };
 
   return (
-    <div className="relative w-full h-[500px] overflow-hidden">
+    <div className="relative w-full h-[15em] overflow-hidden">
       {Slides.map((slide, index) => (
         <div
           key={index}
@@ -41,13 +41,13 @@ export const Slideshow = () => {
       ))}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:bg-black hover:bg-opacity-20 p-2 rounded-full transition-colors"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:text-justGray hover:bg-opacity-20 cursor-pointer p-2 rounded-full transition-colors"
       >
         &#10094;
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:bg-black hover:bg-opacity-20 p-2 rounded-full transition-colors"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-4xl hover:text-justGray hover:bg-opacity-20 cursor-pointer p-2 rounded-full transition-colors"
       >
         &#10095;
       </button>

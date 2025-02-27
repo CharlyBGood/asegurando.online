@@ -28,7 +28,7 @@ const QuoteToolContainer = () => {
   }, []);
 
   return (
-    <div className="quote-tool-container">
+    <div className="quote-tool-container bg-bgDarkBlue text-blueGray w-full">
       <div className="quote-tool-header">
         <h2>Cotizá tu seguro de vehículo con ATM</h2>
         <p>Elegí la opción que más se ajuste a tus necesidades.</p>

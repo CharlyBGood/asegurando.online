@@ -5,11 +5,6 @@ const Slides = [
     text: 'ESTAR SIEMPRE mantiene SEGUROS a nuestros clientes.',
   },
   {
-    image: 'https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=2070',
-    alt: 'Barber shop interior',
-    text: 'INTEGRAL DE COMERCIO para cuidar tu Fuente de Ingresos.',
-  },
-  {
     image: 'https://images.unsplash.com/photo-1605281317010-fe5ffe798166?q=80&w=2072',
     alt: 'Luxury yacht on water',
     text: 'Embarcaciones: el placer de sentirse siempre ACOMPAÑADO.',
@@ -38,11 +33,6 @@ const Slides = [
     image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069',
     alt: 'Modern office space',
     text: 'Cada día más productores y más SERVICIOS.',
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2074',
-    alt: 'Business handshake',
-    text: 'ALIANZAS ESTRATÉGICAS con compañías y profesionales idóneos para obtener las mejores alternativas con el mayor respaldo.',
   }
 ];
 

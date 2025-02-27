@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navigation  from './pages/Navigation';
+import Navigation from './pages/Navigation';
 import HomePage from './pages/HomePage';
 import Footer from './pages/Footer';
 import './App.css';
@@ -11,7 +11,6 @@ const App = () => {
         <Navigation />
         <Routes>
           <Route path="/" element={<HomePage />} />
-
         </Routes>
         <Footer />
       </div>

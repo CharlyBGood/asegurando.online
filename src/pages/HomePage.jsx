@@ -6,15 +6,15 @@ import { Slideshow } from './Slideshow';
 
 const HomePage = () => {
   return (
-    <main className='bg-bgDarkBlue'>
-      <Slideshow />
-      <HeroSection />
-      <section className="quote-section">
-        <QuoteToolContainer />
-      </section>
-      <div className="highlight-strip"></div>
+    <>
+      <main className='bg-bgDarkBlue h-full'>
+        <Slideshow />
+        <HeroSection />
+      </main>
+      {/* <QuoteToolContainer /> */}
       <PartnerSection />
-    </main>
+    </>
+
   );
 };
 
