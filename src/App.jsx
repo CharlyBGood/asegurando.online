@@ -7,7 +7,7 @@ import './App.css';
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="app">
+      <div className="flex flex-col font-federo bg-darkBlue text-blueGray">
         <Navigation />
         <Routes>
           <Route path="/" element={<HomePage />} />

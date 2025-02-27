@@ -2,10 +2,12 @@ import QuoteToolContainer from './QuoteToolContainer';
 import HeroSection from './HeroSection';
 import PartnerSection from './PartnerSection';
 import '../stylesheets/HomePage.css';
+import { Slideshow } from './Slideshow';
 
 const HomePage = () => {
   return (
-    <main>
+    <main className='bg-bgDarkBlue'>
+      <Slideshow />
       <HeroSection />
       <section className="quote-section">
         <QuoteToolContainer />

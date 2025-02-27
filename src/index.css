@@ -1,21 +1,23 @@
 @import "tailwindcss";
 
-:root {
-  color-scheme: light only;
-  --bgr-blue: #253878;
-  --letter-gray: #7a7a7a;
-  --bgrSolid: #03070f;
-  --blckBgr: rgba(3, 7, 15, 0.81);
-  --blgray: #d3dde6;
-  --lightblue: #44b0de;
-  --goldenNew: #f7d16e;
+
+@theme {
+  --color-bgBlue: #253878;
+  --color-bgDarkBlue: #03070f;
+  --color-bgBlack: rgba(3, 7, 15, 0.81);
+  --color-justGray: #7a7a7a;  
+  --color-blueGray: #d3dde6;
+  --color-lightBlue: #44b0de;
+  --color-goldenNew: #f7d16e;
+  --font-federo: "Federo", sans-serif;
 }
+
 
 ::-webkit-scrollbar {
   width: .7em;
 }
 
-::-webkit-scrollbar-track {  
+::-webkit-scrollbar-track {
   background: hsla(219, 70%, 4%, 0.81);
   border-radius: 100vw;
 }
@@ -35,33 +37,9 @@
   }
 }
 
-/* * {
+* {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-} */
-
-/* html,
-body,
-form,
-fieldset,
-p,
-div,
-h1,
-h2,
-h3,
-h4,
-a,
-span {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-  text-size-adjust: none;
-} */
-
-html {
-  background-color: var(--bgrSolid);
+  box-sizing: border-box;  
 }
 
 body,
@@ -75,3 +53,35 @@ body,
   color: var(--blgray);
   font-size: 15px;
 }
+
+
+/*  TAILWIND CLASSES */
+
+.img-prefooter {
+  @apply flex w-full bg-[#ffffff] my-0 m-auto;
+}
+
+.img-prefooter img {
+  @apply w-2/5 my-0 m-auto;
+}
+
+.wsp-link {
+  @apply fixed block h-auto left-[90%] bottom-[7%] opacity-[.9];
+}
+
+.wsp-icon {
+  @apply relative p-2;
+}
+
+.wsp-icon:hover {
+  @apply w-20;
+}
+
+.wsp-icon:active {
+  @apply p-2;
+}
+
+.footer-container {
+  @apply flex justify-evenly p-3 items-center;
+}
+

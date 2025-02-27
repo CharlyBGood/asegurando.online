@@ -12,7 +12,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar bg-bgDarkBlue">
       <div className="nav-container-1">
         <img className="header-logo" src={logoSolo} alt="Maschio & Asoc. Logo" />
         <img
@@ -26,10 +26,10 @@ const Navigation = () => {
       </a>
       <div id="navbar-container-id" className="navbar-container nav-container-2">      
         <a
-          className="contact-link"
+          className="contact-link text-blueGray"
           onClick={toggleContactModal}
         >
-          Contacto
+          CONTACTO
         </a>
 
       </div>
