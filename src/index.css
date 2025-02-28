@@ -99,11 +99,6 @@ body,
 
 /* navbar styles */
 
-.header-logo {
-  width: 8vw;
-  margin: 0.5em;
-}
-
 .header-logo-name {
   width: 14em;
 }
@@ -114,7 +109,7 @@ body,
 
 
 /* welcome */
-.welcome-section,
+/* .welcome-section,
 .about-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,4 +124,4 @@ body,
   width: 100%;
   margin: 0 auto;
   background-color: var(--bgrSolid);
-}
+} */

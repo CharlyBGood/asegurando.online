@@ -1,4 +1,3 @@
-// import QuoteToolContainer from './QuoteToolContainer';
 import HeroSection from './HeroSection';
 
 const HomePage = () => {
@@ -7,8 +6,6 @@ const HomePage = () => {
       <main className='bg-bgDarkBlue h-screen'>
         <HeroSection />
       </main>
-      {/* <QuoteToolContainer /> */}
-      {/* <PartnerSection /> */}
     </>
 
   );

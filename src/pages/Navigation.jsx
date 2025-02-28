@@ -3,7 +3,6 @@ import maschio3 from "../assets/logos/maschio3.png";
 import logoSolo from "../assets/logos/logoSolo.png";
 import { BiSolidContact } from "react-icons/bi";
 
-
 const NavLink = ({ href, children, onClick }) => (
   <a
     href={href}
@@ -27,8 +26,8 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="bg-bgDarkBlue sticky top-0 z-50 w-full opacity-90">
-      <div className="container mx-auto px-4">
+    <nav className="bg-bgDarkBlue sticky top-0 z-50 w-full opacity-90 p-2">
+      <div className="container mx-auto px-2">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center gap-4">
             <img
@@ -39,26 +38,25 @@ const Navigation = () => {
             <img
               className="header-logo-name w-32 md:w-40"
               src={maschio3}
-              alt="maschio y asociados logo"
+              alt="Maschio y Asociados logo"
             />
           </div>
-          <div className="lg:hidden">
+          <div className="md:hidden">
             <button
               onClick={toggleContactModal}
-              className="cursor-pointer text-2xl text-lightBlue focus:outline-none"
+              className="cursor-pointer text-4xl hover:text-lightBlue focus:outline-none"
               aria-label="Toggle menu"
             >
               <BiSolidContact />
             </button>
           </div>
-          <div className="hidden lg:flex space-x-6">
+          <div className="hidden md:flex space-x-6">
             <NavLink href="#" onClick={toggleContactModal}>
               CONTACTO
             </NavLink>
           </div>
         </div>
       </div>
-      {/* Contact Modal */}
       {isContactModalOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"

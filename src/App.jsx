@@ -3,6 +3,7 @@ import Navigation from './pages/Navigation';
 import HomePage from './pages/HomePage';
 import Footer from './pages/Footer';
 import PartnerSection from './pages/PartnerSection';
+import Welcome from './pages/Welcome';
 import './App.css';
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
         </Routes>
         <PartnerSection />
+        <Welcome />
         <Footer />
       </div>
     </BrowserRouter>
