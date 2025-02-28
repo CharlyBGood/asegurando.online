@@ -2,14 +2,14 @@
 
 
 @theme {
-  --color-bgBlue: #253878;
+  --color-Blue: #253878;
   --color-bgDarkBlue: #03070f;
   --color-Black: rgba(3, 7, 15, 0.81);
   --color-justGray: #7a7a7a;
   --color-blueGray: #d3dde6;
   --color-lightBlue: #44b0de;
   --color-lightBlueHover: #3a9ecb;
-  --color-goldenNew: #f7d16e;
+  --color-Golden: #f7d16e;
   --font-federo: "Federo", sans-serif;
   --cta-btn-padding: 0.75rem 2rem;
 }
@@ -57,6 +57,8 @@ body,
 
 /*  TAILWIND CLASSES */
 
+/* image prefooter superintendencia de seguros */
+
 .img-prefooter {
   @apply flex w-full bg-[#ffffff] my-0 m-auto;
 }
@@ -64,6 +66,14 @@ body,
 .img-prefooter img {
   @apply w-2/5 my-0 m-auto;
 }
+
+@media screen and (max-width: 850px) {
+  .img-prefooter img {
+    @apply w-3/4 my-0 m-auto;
+  }
+}
+
+/* image prefooter superintendencia de seguros */
 
 .wsp-link {
   @apply fixed block h-auto left-[90%] bottom-[7%] opacity-[.9];
@@ -119,54 +129,4 @@ body,
   width: 100%;
   margin: 0 auto;
   background-color: var(--bgrSolid);
-}
-
-/* partners styles  */
-
-/* .description-container {
-  background: url("./assets/black.png") no-repeat center center fixed;
-  background-size: cover;  
-} */
-
-/* Support container */
-
-.support-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 75%;
-  height: auto;
-  margin: 11em auto;
-  padding: 1em 0;
-  background-color: #03070f;
-  opacity: 0.9;
-}
-
-.support-container h2,
-.support-container p {
-  width: 85%;
-  margin: 0 auto;
-  font-size: 1.5em;
-  padding: .3em;
-  text-align: center;
-  font-weight: lighter;
-}
-
-.support-container h2,
-.about-img-container h1 {
-  letter-spacing: .2em;
-}
-
-.support-container h2 {
-  margin-bottom: 1em;
-}
-
-.support-container b,
-.about-img-container b,
-.welcome-section b {
-  color: #f7d16e;
 }

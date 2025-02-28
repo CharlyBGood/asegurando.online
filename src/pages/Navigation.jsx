@@ -1,58 +1,82 @@
-import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
-import '../stylesheets/Navigation.css';
-import maschio3 from '../assets/logos/maschio3.png';
-import logoSolo from '../assets/logos/logoSolo.png';
+import React, { useState } from "react";
+import maschio3 from "../assets/logos/maschio3.png";
+import logoSolo from "../assets/logos/logoSolo.png";
+import { BiSolidContact } from "react-icons/bi";
+
+
+const NavLink = ({ href, children, onClick }) => (
+  <a
+    href={href}
+    className="text-blueGray hover:text-lightBlue hover:border-b hover:border-lightBlue transition-all duration-300"
+    onClick={onClick}
+  >
+    {children}
+  </a>
+);
 
 const Navigation = () => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleContactModal = () => {
     setIsContactModalOpen(!isContactModalOpen);
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <nav className="navbar bg-bgDarkBlue">
-      <div className="nav-container-1">
-        <img className="header-logo" src={logoSolo} alt="Maschio & Asoc. Logo" />
-        <img
-          className="header-logo-name"
-          src={maschio3}
-          alt="maschio y asociados logo"
-        />
+    <nav className="bg-bgDarkBlue sticky top-0 z-50 w-full opacity-90">
+      <div className="container mx-auto px-4">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex-shrink-0 flex items-center gap-4">
+            <img
+              className="header-logo w-20 md:w-24"
+              src={logoSolo}
+              alt="Maschio & Asoc. Logo"
+            />
+            <img
+              className="header-logo-name w-32 md:w-40"
+              src={maschio3}
+              alt="maschio y asociados logo"
+            />
+          </div>
+          <div className="lg:hidden">
+            <button
+              onClick={toggleContactModal}
+              className="cursor-pointer text-2xl text-lightBlue focus:outline-none"
+              aria-label="Toggle menu"
+            >
+              <BiSolidContact />
+            </button>
+          </div>
+          <div className="hidden lg:flex space-x-6">
+            <NavLink href="#" onClick={toggleContactModal}>
+              CONTACTO
+            </NavLink>
+          </div>
+        </div>
       </div>
-      <a href="#" className="navbar-container navbar_toggle">
-        <span className="arrow-down">‿</span>
-      </a>
-      <div id="navbar-container-id" className="navbar-container nav-container-2">      
-        <a
-          className="contact-link text-blueGray"
+      {/* Contact Modal */}
+      {isContactModalOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
           onClick={toggleContactModal}
         >
-          CONTACTO
-        </a>
-
-      </div>
-      {isContactModalOpen && (
-        <div className="modal-overlay" onClick={toggleContactModal}>
-          <div className="contact-modal" onClick={e => e.stopPropagation()}>
-            <button className="close-button" onClick={toggleContactModal}>×</button>
-            <h2>Contactanos</h2>
-            <form className="contact-form">
-              <div className="form-group">
-                <label htmlFor="name">Nombre</label>
-                <input type="text" id="name" name="name" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input type="email" id="email" name="email" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">Mensaje</label>
-                <textarea id="message" name="message" rows="4"></textarea>
-              </div>
-              <button type="submit" className="submit-button">Enviar</button>
-            </form>
+          <div
+            className="bg-bgDarkBlue border border-gray-700 rounded-lg p-8 w-11/12 max-w-md relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="cursor-pointer absolute top-4 right-4 text-gray-400 hover:text-lightBlue text-4xl"
+              onClick={toggleContactModal}
+            >
+              ×
+            </button>
+            <div>
+              texto y contenido de CONTACTO
+            </div>
           </div>
         </div>
       )}
