@@ -5,7 +5,7 @@
   --color-bgBlue: #253878;
   --color-bgDarkBlue: #03070f;
   --color-Black: rgba(3, 7, 15, 0.81);
-  --color-justGray: #7a7a7a;  
+  --color-justGray: #7a7a7a;
   --color-blueGray: #d3dde6;
   --color-lightBlue: #44b0de;
   --color-lightBlueHover: #3a9ecb;
@@ -41,7 +41,7 @@
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 body,
@@ -51,7 +51,7 @@ body,
   margin: 0;
   width: 100%;
   height: 100%;
-  font-family: "Federo", sans-serif;  
+  font-family: "Federo", sans-serif;
   font-size: 15px;
 }
 
@@ -85,3 +85,125 @@ body,
   @apply flex justify-evenly p-3 items-center;
 }
 
+
+
+/* welcome */
+
+.welcome-section,
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--bgrSolid);
+}
+
+/* partners styles  */
+
+.description-container {
+  background: url("./assets/black.png") no-repeat center center fixed;
+  background-size: cover;
+  padding: 3em;
+}
+
+.container-item {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5em;
+}
+
+.container-item p,
+.container-item h2 {
+  /* color: var(--blgray); */
+  text-shadow: 2px 2px 2px #03070f;
+  font-size: 1.2em;
+  padding: 0.1em;
+  width: 75%;
+  margin: 0.1em auto;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.item-1 {
+  grid-column: 1;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+}
+
+.item-2 {
+  grid-column: 3;
+  -ms-grid-column: 3;
+  grid-column-start: 3;
+}
+
+.item-3 {
+  grid-column: 2;
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
+}
+
+.item-4 {
+  grid-column: 1;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+}
+
+.item-5 {
+  grid-column: 3;
+  -ms-grid-column: 3;
+  grid-column-start: 3;
+}
+
+
+/* Support container */
+
+.support-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 75%;
+  height: auto;
+  margin: 11em auto;
+  padding: 1em 0;
+  background-color: #03070f;
+  opacity: 0.9;
+}
+
+.support-container h2,
+.support-container p {
+  width: 85%;
+  margin: 0 auto;
+  font-size: 1.5em;
+  padding: .3em;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.support-container h2,
+.about-img-container h1 {
+  letter-spacing: .2em;
+}
+
+.support-container h2 {
+  margin-bottom: 1em;
+}
+
+.support-container b,
+.about-img-container b,
+.welcome-section b {
+  color: #f7d16e;
+}

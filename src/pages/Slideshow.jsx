@@ -34,9 +34,9 @@ export const Slideshow = () => {
             alt={slide.alt}
             className="w-full h-full object-cover"
           />
-          <div className="absolute bottom-0 left-0 right-0 bg-opacity-50 p-4">
-            <h4 className="text-white text-xl text-center">{slide.text}</h4>
+          <div className="absolute bg-bgBlue bottom-0 left-0 right-0 opacity-50 h-100 p-4">            
           </div>
+          <h4 className="absolute mb-2 text-2xl text-center bottom-25 left-0 right-0">{slide.text}</h4>
         </div>
       ))}
       <button
