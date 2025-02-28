@@ -7,10 +7,7 @@ import SMLinks from './utilities/SMLinks'
 const Footer = () => {
   return (
     <>
-      <a className="wsp-link" href="https://wa.me/5491156999580" target="_blank">
-        <img className="wsp-icon" src={whatsapp} alt="logo de WhatsApp" />
-      </a>
-      <footer className='absolute bottom-0 w-full'>
+      <footer className='fixed bottom-0 w-full'>
         <div className="img-prefooter">
           <img src={superintendencia} alt="Super intendencia de seguros de la Nación" />
         </div>
