@@ -3,8 +3,8 @@ import galicia from "../../assets/partners/galiciaseguros.png";
 import mapfre from "../../assets/partners/mapfre.png";
 import mercantilandina from "../../assets/partners/mercantilandinar.png";
 import provinciaseguros from "../../assets/partners/provinciaseguros.png";
-import libra from "../../assets/partners/libra.svg";
-import galeno from "../../assets/partners/galeno.svg";
+import libra from "../../assets/partners/libra.png";
+import galeno from "../../assets/partners/galeno.png";
 
 const PartnersLogos = [
     { id: 1, name: 'ATM Seguros', logo: atm},

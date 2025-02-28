@@ -87,8 +87,23 @@ body,
 
 
 
-/* welcome */
+/* navbar styles */
 
+.header-logo {
+  width: 8vw;
+  margin: 0.5em;
+}
+
+.header-logo-name {
+  width: 14em;
+}
+
+/* navbar styles */
+
+
+
+
+/* welcome */
 .welcome-section,
 .about-container {
   display: -webkit-box;
@@ -108,62 +123,10 @@ body,
 
 /* partners styles  */
 
-.description-container {
+/* .description-container {
   background: url("./assets/black.png") no-repeat center center fixed;
-  background-size: cover;
-  padding: 3em;
-}
-
-.container-item {
-  width: 100%;
-  height: auto;
-  border-radius: 0.5em;
-}
-
-.container-item p,
-.container-item h2 {
-  /* color: var(--blgray); */
-  text-shadow: 2px 2px 2px #03070f;
-  font-size: 1.2em;
-  padding: 0.1em;
-  width: 75%;
-  margin: 0.1em auto;
-  text-align: center;
-  font-weight: lighter;
-}
-
-.item-1 {
-  grid-column: 1;
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-}
-
-.item-2 {
-  grid-column: 3;
-  -ms-grid-column: 3;
-  grid-column-start: 3;
-}
-
-.item-3 {
-  grid-column: 2;
-  -ms-grid-column: 2;
-  grid-column-start: 2;
-  -ms-grid-column-span: 1;
-  grid-column-end: 3;
-}
-
-.item-4 {
-  grid-column: 1;
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-}
-
-.item-5 {
-  grid-column: 3;
-  -ms-grid-column: 3;
-  grid-column-start: 3;
-}
-
+  background-size: cover;  
+} */
 
 /* Support container */
 
