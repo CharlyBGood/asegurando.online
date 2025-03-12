@@ -1,6 +1,6 @@
 const Slides = [
   {
-    image: 'https://estarsiempreseguros.com.ar/img/slideshow/buildings.png',
+    image: 'https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741811429/buildings_usntuj.png',
     alt: 'Modern city buildings',
     text: 'La calidad de servicio se mide con la SATISFACCIÓN de nuestros ASEGURADOS.',
   },

@@ -1,4 +1,4 @@
-const Welcome = () => {
+const WhoWeAre = () => {
   return (
     <div className="support-container">
       <h2 className="text-2xl mb-6 text-center">
@@ -17,4 +17,4 @@ const Welcome = () => {
   )
 }
 
-export default Welcome;
+export default WhoWeAre;

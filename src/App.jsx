@@ -1,11 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navigation from './pages/Navigation';
-// import HomePage from './pages/HomePage';
 import Footer from './pages/Footer';
-import PartnerSection from './pages/PartnerSection';
-import Welcome from './pages/Welcome';
 import HeroSection from './pages/HeroSection';
 import './App.css';
+import WhoWeAre from './pages/WhoWeAre';
 
 const App = () => {
   return (
@@ -14,9 +12,8 @@ const App = () => {
         <Navigation />
         <Routes>
           <Route path="/" element={<HeroSection />} />
-        </Routes>        
-        <PartnerSection />
-        <Welcome />
+        </Routes>
+        <WhoWeAre />
         <Footer />
       </div>
     </BrowserRouter>
