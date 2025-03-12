@@ -1,7 +1,6 @@
 import React from 'react';
-import PartnersLogos from './utilities/PartnersLogos';
 import CallToActionSection from './CallToActionSection';
-import PartnersCard from './PartnerssCard';
+import PartnersCard from './PartnersCard';
 
 const PartnerSection = React.memo(() => {
   return (
