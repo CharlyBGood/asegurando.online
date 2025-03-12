@@ -5,3 +5,8 @@
   font-family: "Federo", sans-serif;
 }
 
+.bg-image-sonicMan {
+  background-image: url("./assets/partners/sonic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

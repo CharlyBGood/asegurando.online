@@ -8,7 +8,6 @@ import galeno from "../../assets/partners/galeno.png";
 import provinciaart from "../../assets/partners/provinciaart.jpeg";
 
 const PartnersLogos = [
-  { id: 1, name: 'ATM Seguros', logo: atm },
   { id: 2, name: 'Galicia Seguros', logo: galicia },
   { id: 3, name: 'Mapfre Seguros', logo: mapfre },
   { id: 4, name: 'Mercantil Andina Seguros', logo: mercantilandina },
