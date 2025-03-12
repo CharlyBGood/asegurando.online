@@ -7,7 +7,7 @@ import SMLinks from './utilities/SMLinks'
 const Footer = () => {
   return (
     <>
-      <footer className='fixed bottom-0 w-full'>
+      <footer className='bottom-0 w-full'>
         <div className="img-prefooter">
           <img src={superintendencia} alt="Super intendencia de seguros de la Nación" />
         </div>

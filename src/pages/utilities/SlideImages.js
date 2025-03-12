@@ -1,8 +1,8 @@
 const Slides = [
   {
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070',
+    image: 'https://estarsiempreseguros.com.ar/img/slideshow/buildings.png',
     alt: 'Modern city buildings',
-    text: 'ESTAR SIEMPRE mantiene SEGUROS a nuestros clientes.',
+    text: 'La calidad de servicio se mide con la SATISFACCIÓN de nuestros ASEGURADOS.',
   },
   {
     image: 'https://images.unsplash.com/photo-1605281317010-fe5ffe798166?q=80&w=2072',
@@ -17,7 +17,7 @@ const Slides = [
   {
     image: 'https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?q=80&w=2069',
     alt: 'Dog resting on couch',
-    text: 'Sabemos cuidar al MEJOR amigo. ¡Como se lo MERECE!',
+    text: 'Sabemos cuidar a tu MEJOR amigo. ¡Como se lo MERECE!',
   },
   {
     image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2070',
@@ -29,11 +29,16 @@ const Slides = [
     alt: 'Motorcycle on road',
     text: 'Disfrutá el CAMINO, con una mejor opción.',
   },
-  {
-    image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069',
-    alt: 'Modern office space',
-    text: 'Cada día más productores y más SERVICIOS.',
-  }
+  // {
+  //   art: 'agregar art'
+  // con cuantes de trabajo o algo así
+  // text: Trabaja tranquilo con la mejor 
+  // },
+  // {
+  //   movilidad: 'patineta/monopatín'
+  // con monopatín, patines o algo así
+  // text: manejate tranquilo por la ciudad
+  // }
 ];
 
 export default Slides;

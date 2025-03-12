@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navigation from './pages/Navigation';
-import HomePage from './pages/HomePage';
+// import HomePage from './pages/HomePage';
 import Footer from './pages/Footer';
 import PartnerSection from './pages/PartnerSection';
 import Welcome from './pages/Welcome';
+import HeroSection from './pages/HeroSection';
 import './App.css';
 
 const App = () => {
@@ -12,8 +13,8 @@ const App = () => {
       <div className="flex flex-col font-federo bg-bgDarkBlue text-blueGray">
         <Navigation />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes>
+          <Route path="/" element={<HeroSection />} />
+        </Routes>        
         <PartnerSection />
         <Welcome />
         <Footer />
