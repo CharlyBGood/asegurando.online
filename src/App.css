@@ -14,7 +14,7 @@
 
 .respalda-container {
   width: 75%;
-  /* margin: 1em auto; */
+  margin: 1em auto;
   height: 65vh;
   align-self: center;
   align-items: center;
@@ -26,9 +26,15 @@
   position: relative;
   left: -13%;
   /* padding: 1em; */
- /* box-shadow: 4px 3px 1px 1px lightblue; */
+  /* box-shadow: 4px 3px 1px 1px lightblue; */
 }
-  
-.respalda-text-container h2, p {
-  text-shadow: -8px 4px 6px var(--color-bgDarkBlue);
+
+.respalda-text-container h2,
+.respalda-text-container p {
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8), /* Base shadow */
+    -2px -2px 4px rgba(0, 0, 0, 0.8), /* Offset shadow */
+    0 0 8px var(--color-bgDarkBlue), /* Glow effect */
+    0 0 12px var(--color-bgDarkBlue), /* Outer glow */
+    0 0 16px var(--color-bgDarkBlue); /* Even outer glow */
 }
