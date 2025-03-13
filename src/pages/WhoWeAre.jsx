@@ -2,10 +2,10 @@ import sonicMan from '../assets/partners/sonic.png';
 
 const WhoWeAre = () => {
   return (
-    <div className="flex flex-row flex-wrap p-2 m-4">
+    <div className="respalda-container flex flex-row flex-wrap p-2 m-4">
       <div className="flex-1 flex justify-center bg-image-sonicMan">
       </div>
-      <div className="flex-1 lg:ml-8">
+      <div className="flex-1 lg:ml-8 respalda-text-container">
         <h2 className="text-2xl mb-6 text-center lg:text-left">
           <b className="text-Golden">Q</b>uién <b className="text-Golden">N</b>os <b className="text-Golden">R</b>espalda
         </h2>

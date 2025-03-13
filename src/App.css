@@ -9,4 +9,26 @@
   background-image: url("./assets/partners/sonic.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+}
+
+.respalda-container {
+  width: 75%;
+  /* margin: 1em auto; */
+  height: 65vh;
+  align-self: center;
+  align-items: center;
+  border: 1em solid var(--color-lightBlue);
+  border-radius: .5em;
+}
+
+.respalda-text-container {
+  position: relative;
+  left: -13%;
+  /* padding: 1em; */
+ /* box-shadow: 4px 3px 1px 1px lightblue; */
+}
+  
+.respalda-text-container h2, p {
+  text-shadow: -8px 4px 6px var(--color-bgDarkBlue);
 }
