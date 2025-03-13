@@ -1,5 +1,3 @@
-import sonicMan from '../assets/partners/sonic.png';
-
 const WhoWeAre = () => {
   return (
     <div className="respalda-container flex flex-row flex-wrap p-2 m-4">
