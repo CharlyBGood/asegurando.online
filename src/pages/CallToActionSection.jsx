@@ -1,4 +1,4 @@
-import atm from '../assets/partners/atmLogo.png';
+const atm = "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741819703/atmLogo_zgzx7l.png"
 
 const CallToActionSection = () => {
   return (

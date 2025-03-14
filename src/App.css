@@ -6,7 +6,7 @@
 }
 
 .bg-image-sonicMan {
-  background-image: url("./assets/partners/sonic.png");
+  background-image: url("https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741819703/sonic_hpujie.avif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -18,7 +18,7 @@
   height: 65vh;
   align-self: center;
   align-items: center;
-  border: 1em solid var(--color-lightBlue);
+  border: .6em solid var(--color-lightBlue);
   border-radius: .5em;
 }
 
@@ -31,10 +31,8 @@
 
 .respalda-text-container h2,
 .respalda-text-container p {
-  text-shadow: 
-    2px 2px 4px rgba(0, 0, 0, 0.8), /* Base shadow */
-    -2px -2px 4px rgba(0, 0, 0, 0.8), /* Offset shadow */
-    0 0 8px var(--color-bgDarkBlue), /* Glow effect */
-    0 0 12px var(--color-bgDarkBlue), /* Outer glow */
-    0 0 16px var(--color-bgDarkBlue); /* Even outer glow */
+
+  background: var(--color-Black);
+  border-radius: .5em;
+  padding: .3em;  
 }
