@@ -4,12 +4,11 @@ export const Contact = ({ openCloseModal }) => (
 
   <div
     className="modal-container-4"
-    onClick={openCloseModal}
   >
     <div className="modal-content-4">
       <div className="modal-4-header">
         <h1>Contactanos</h1>
-        <span className="close-4">×</span>
+        <span className="close-4" onClick={openCloseModal}>×</span>
       </div>
       <div className="modal-display-4">
         <div className="modal-display-left">
@@ -21,8 +20,13 @@ export const Contact = ({ openCloseModal }) => (
         </div>
         <div className="modal-display-right">
           <h3 className="ubicacion">Ubicación</h3>
-          <h3>25 de Mayo 432 Piso 4*</h3>
-          <h3>Ciudad Autónoma de Buenos Aires.</h3>
+          <h3>25 de Mayo 432 Piso 4*, C.A.B.A</h3>
+          <button className="map-button">
+            <a href="https://goo.gl/maps/sAjkAx6bxECxoMKv5" target="_BLANK">
+              VER MAPA
+            </a>
+          </button>
+
           <h3 className="citas">Las citas deben ser acordadas previamente.</h3>
           <h3>Lunes a Viernes de 10:00 a 17:00 hs.</h3>
           <h3>

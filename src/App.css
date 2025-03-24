@@ -14,13 +14,11 @@
 }
 
 .respalda-container {
-  width: 75%;
+  width: 85%;
   margin: 1em auto;
   height: 65vh;
   align-self: center;
   align-items: center;
-  border: .6em solid var(--color-lightBlue);
-  border-radius: .5em;
 }
 
 .respalda-text-container {
