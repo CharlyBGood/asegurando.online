@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import maschio3 from "../assets/logos/maschio3.png";
 import logoSolo from "../assets/logos/logoSolo.png";
 import { BiSolidContact } from "react-icons/bi";
+import { Contact } from "./Contact";
 
 const NavLink = ({ href, children, onClick }) => (
   <a
@@ -58,25 +59,7 @@ const Navigation = () => {
         </div>
       </div>
       {isContactModalOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
-          onClick={toggleContactModal}
-        >
-          <div
-            className="bg-bgDarkBlue border border-gray-700 rounded-lg p-8 w-11/12 max-w-md relative"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              className="cursor-pointer absolute top-4 right-4 text-gray-400 hover:text-lightBlue text-4xl"
-              onClick={toggleContactModal}
-            >
-              ×
-            </button>
-            <div>
-              texto y contenido de CONTACTO
-            </div>
-          </div>
-        </div>
+        <Contact openCloseModal={toggleContactModal} />
       )}
     </nav>
   );
