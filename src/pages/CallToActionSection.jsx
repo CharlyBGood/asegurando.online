@@ -1,4 +1,4 @@
-const atm = "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741819703/atmLogo_zgzx7l.png"
+const atm = "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741819703/atmLogo_zgzx7l.png";
 import { CTAButton } from "./utilities/CTAButton";
 
 const CallToActionSection = () => {
@@ -13,10 +13,9 @@ const CallToActionSection = () => {
           alt="Logo of ATM Seguros"
         />
       </p>
-      <CTAButton />
+      <CTAButton btnText="¡COTIZA YA!" href="https://ecommerce.atmseguros.com.ar/" />
     </div>
   );
 };
 
 export default CallToActionSection;
-

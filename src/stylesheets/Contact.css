@@ -7,40 +7,29 @@
   left: 0;
   top: 0;
   height: 100%;
+  width: 100%;
   overflow: auto;
   background-color: #000;
-  /* background: url('');
+  background-image: url('https://res.cloudinary.com/dr8pwzxzn/image/upload/v1742847710/citymovingfuture_lkmoio.gif');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; */
-  width: 100%;
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
+  animation: animatetop 0.4s;
 }
 
 .modal-content-4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   margin: 7% auto;
   padding: 0.3em;
   border-radius: 0.5em;
   width: 85%;
-  background-color: rgba(3, 7, 15, 0.81);
+  background-color: rgba(3, 7, 15, 0.9);
+  /* Added opacity for better readability */
 }
 
 .modal-4-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   background-color: #44b0de;
@@ -60,38 +49,19 @@
 .close-4 {
   color: #03070f;
   font-size: 3em;
+  cursor: pointer;
 }
 
 .close-4:hover,
 .close-4:focus {
   color: #d3dde6;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .modal-display-4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   width: 90%;
-}
-
-.modal-display-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0 1em;
-  justify-content: center;
-  border-radius: 0.5em;
-  width: 60%;
+  height: 100%;
 }
 
 .logo-column-img {
@@ -99,12 +69,11 @@
   max-height: 90%;
 }
 
-
 .map-button,
 .call-button {
   background-color: #03070f;
   color: #d3dde6;
-  padding: .3em;
+  padding: 0.3em;
   margin: 0 auto;
   width: 60%;
   border-radius: 0.4em;
@@ -118,40 +87,21 @@
   text-decoration: none;
 }
 
-.modal-display-left iframe {
-  border-radius: 0.4em;
-  width: 80%;
-  height: 50vh;
-  padding: 0.6em;
-  border-radius: 0.9em;
-}
-
-.modal-display-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.modal-display-right,
+.modal-display-left {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  gap: .6em;
   justify-content: center;
-  width: 40%;
-  max-height: 90%;
+  margin: auto;
+  gap: 2em;
+  width: 100%;
 }
 
 .modal-display-right h2 {
   background-color: #44b0de;
   color: #03070f;
   font-size: 1.5em;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
   text-align: center;
   width: 100%;
   padding: 0.5em;
@@ -171,8 +121,9 @@
 .citas {
   border-bottom: 1px solid #44b0de;
   border-top: 1px solid #44b0de;
-  padding: .3em;
+  padding: 0.3em;
   color: #f7d16e;
+  margin: 1em 0;
 }
 
 .ubicacion {
@@ -191,18 +142,6 @@
   color: #7a7a7a;
 }
 
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
 @keyframes animatetop {
   from {
     top: -300px;
@@ -217,9 +156,7 @@
 
 .logoGold {
   width: 16vw;
-  padding: .5em;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
+  padding: 0.5em;
   align-self: center;
 }
 
@@ -229,16 +166,7 @@
   }
 
   .modal-display-4 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    margin: 0 auto;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     width: 100%;
   }

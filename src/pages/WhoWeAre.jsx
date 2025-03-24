@@ -10,7 +10,7 @@ const WhoWeAre = () => {
           </h2>
           <p className="text-blueGray text-center lg:text-left mb-2">
             <a className="text-lightBlue">Maschio y Asoc.</a> se complementa con{" "}
-            <b className="text-Golden">Grupo Baioni Internacional</b> – Broker líder con más de 42 años de
+            <b className="text-Golden">Grupo Baioni Internacional</b> – Broker líder con más de 40 años de
             experiencia en el mercado y profesionales altamente capacitados.
           </p>
           <p className="text-blueGray text-center lg:text-left">

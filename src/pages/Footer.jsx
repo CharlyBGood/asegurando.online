@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="img-prefooter">
           <img src={superintendencia} alt="Super intendencia de seguros de la Nación" />
         </div>
-        <div className='w-full flex justify-evenly p-3 items-center bg-bgDarkBlue p-3 '>
+        <div className='w-full flex justify-evenly items-center bg-bgDarkBlue p-3 '>
           <span>Buenos Aires, Argentina</span>
           <span>(011) 5699-9580</span>
           {
