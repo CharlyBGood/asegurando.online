@@ -6,9 +6,10 @@
 }
 
 .bg-image-sonicMan {
-  background-image: url("https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741819703/sonic_hpujie.avif");
+  background-image: url("https://res.cloudinary.com/dr8pwzxzn/image/upload/v1742829738/photo_5086826439680044633_x_fyhzt9.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 100%;
 }
 
@@ -25,14 +26,11 @@
 .respalda-text-container {
   position: relative;
   left: -13%;
-  /* padding: 1em; */
-  /* box-shadow: 4px 3px 1px 1px lightblue; */
 }
 
 .respalda-text-container h2,
 .respalda-text-container p {
-
   background: var(--color-Black);
   border-radius: .5em;
-  padding: .3em;  
+  padding: .3em;
 }
