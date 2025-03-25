@@ -6,7 +6,7 @@ export const Contact = ({ openCloseModal }) => (
   <div className="modal-container-4">
     <div className="modal-content-4">
       <div className="modal-4-header">
-        <h1>Contactanos</h1>
+        <h1>Cómo encontrarnos</h1>
         <span className="close-4" onClick={openCloseModal}>×</span>
       </div>
       <div className="modal-display-4">
@@ -19,15 +19,16 @@ export const Contact = ({ openCloseModal }) => (
           <h3 className="citas">Las citas deben ser acordadas previamente.</h3>
         </div>
         <div className="modal-display-right">
-          <h3>+54 9 11 5699-9580</h3>
-          <CTAButton href="tel:+54 9 11 5699-9580">
-            <FaPhone />
-          </CTAButton>
+          <h3 className="ubicacion">Contacto</h3>
           <h3>
             <a className="email" href="mailto:maschiomartin@gmail.com">
               maschiomartin@gmail.com
             </a>
           </h3>
+          <h3>+54 9 11 5699-9580</h3>
+          <CTAButton href="tel:+54 9 11 5699-9580">
+            <FaPhone />
+          </CTAButton>
           <img
             className="logoGold"
             src="https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741819729/logoHD2_l7jags.png"
