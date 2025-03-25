@@ -4,6 +4,7 @@ import Footer from './pages/Footer';
 import HeroSection from './pages/HeroSection';
 import './App.css';
 import WhoWeAre from './pages/WhoWeAre';
+import { WhatsAppBtn } from './pages/utilities/WhatsAppBtn';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<HeroSection />} />
         </Routes>
         <WhoWeAre />
+        <WhatsAppBtn />
         <Footer />
       </div>
     </BrowserRouter>

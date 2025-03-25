@@ -1,4 +1,3 @@
-import whatsapp from '../assets/logos/wasap.png';
 import SocialMedia from './utilities/SocialMedia';
 import SMLinks from './utilities/SMLinks'
 
