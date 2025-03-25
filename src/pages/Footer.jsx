@@ -1,8 +1,8 @@
 import whatsapp from '../assets/logos/wasap.png';
-import superintendencia from '../assets/prefooter.png';
 import SocialMedia from './utilities/SocialMedia';
 import SMLinks from './utilities/SMLinks'
 
+const superintendencia = "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741819684/prefooter_cr0pej.png"
 
 const Footer = () => {
   return (

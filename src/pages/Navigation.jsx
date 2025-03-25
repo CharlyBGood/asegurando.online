@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import maschio3 from "../assets/logos/maschio3.png";
-import logoSolo from "../assets/logos/logoSolo.png";
 import { BiSolidContact } from "react-icons/bi";
 import { Contact } from "./Contact";
+
+const maschio3 = "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741819729/maschio3_onrbup.png";
+const logoSolo = "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741819729/logoSolo_qvxfcr.png";
 
 const NavLink = ({ href, children, onClick }) => (
   <a
