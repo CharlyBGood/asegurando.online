@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Slides from './utilities/SlideImages'
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi"
 
 export const Slideshow = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -21,39 +22,48 @@ export const Slideshow = () => {
   };
 
   return (
-    <div className="relative w-full h-[15em] overflow-hidden">
+    <div className="relative w-full h-[21em] overflow-hidden">
       {Slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute w-full h-full transition-opacity duration-500 ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0'
-          }`}
+          className={`absolute w-full h-full transition-opacity duration-500 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
+            }`}
         >
           <img
             src={slide.image}
             alt={slide.alt}
             className="w-full h-full object-cover"
           />
-          {/* <div className="absolute bg-bgBlue bottom-0 left-0 right-0 opacity-50 h-100 p-4">            
-          </div> */}
-          <div className="mb-2 p-2 opacity-75 absolute bg-bgDarkBlue bottom-0 left-0 right-0">            
-          <h4 className="text-2xl text-center">{slide.text}</h4>
+          <div className="mb-2 p-2 opacity-75 absolute bg-bgDarkBlue bottom-4 left-0 right-0">
+            <h4 className="text-2xl text-center">{slide.text}</h4>
           </div>
-          {/* <h4 className="absolute mb-2 text-2xl text-center bottom-25 left-0 right-0">{slide.text}</h4> */}
         </div>
       ))}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:text-justGray hover:bg-opacity-20 cursor-pointer p-2 rounded-full transition-colors"
+        className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-bgDarkBlue/50 hover:bg-bgDarkBlue/70 text-white text-2xl md:text-3xl p-2 rounded-full transition-colors"
+        aria-label="Previous slide"
       >
-        &#10094;
+        <FiChevronLeft />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-4xl hover:text-justGray hover:bg-opacity-20 cursor-pointer p-2 rounded-full transition-colors"
+        className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-bgDarkBlue/50 hover:bg-bgDarkBlue/70 text-white text-2xl md:text-3xl p-2 rounded-full transition-colors"
+        aria-label="Next slide"
       >
-        &#10095;
+        <FiChevronRight />
       </button>
+      <div className="absolute bottom-0 left-0 right-0 flex justify-center gap-2">
+        {Slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all ${index === currentSlide ? "bg-lightBlue scale-125" : "bg-blueGray/50"
+              }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
     </div>
   );
 };

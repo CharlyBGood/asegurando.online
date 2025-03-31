@@ -1,44 +1,45 @@
 const Slides = [
   {
     image: 'https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741811429/buildings_usntuj.png',
-    alt: 'Modern city buildings',
-    text: 'La calidad de servicio se mide con la SATISFACCIÓN de nuestros ASEGURADOS.',
+    alt: 'Edificios modernos en la ciudad',
+    text: 'La CALIDAD de servicio se mide con la SATISFACCIÓN de nuestros ASEGURADOS.',
   },
   {
     image: 'https://images.unsplash.com/photo-1605281317010-fe5ffe798166?q=80&w=2072',
-    alt: 'Luxury yacht on water',
+    alt: 'Yate de lujo en el mar',
     text: 'Embarcaciones: el placer de sentirse siempre ACOMPAÑADO.',
   },
   {
     image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070',
-    alt: 'Modern car interior',
+    alt: 'Auto de lujo en la carretera',
     text: 'Tenemos las MEJORES bonificaciones del mercado.',
   },
   {
     image: 'https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?q=80&w=2069',
-    alt: 'Dog resting on couch',
+    alt: 'Perro descansando en el sofá',
     text: 'Sabemos cuidar a tu MEJOR amigo. ¡Como se lo MERECE!',
   },
   {
     image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2070',
-    alt: 'Modern luxury house',
+    alt: 'Casa de lujo moderna',
     text: 'SOLUCIONES a la medida de tus necesidades.',
   },
   {
     image: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=2070',
-    alt: 'Motorcycle on road',
+    alt: 'Moto en la carretera',
     text: 'Disfrutá el CAMINO, con una mejor opción.',
   },
-  // {
-  //   art: 'agregar art'
-  // con cuantes de trabajo o algo así
-  // text: Trabaja tranquilo con la mejor 
-  // },
-  // {
-  //   movilidad: 'patineta/monopatín'
-  // con monopatín, patines o algo así
-  // text: manejate tranquilo por la ciudad
-  // }
+  {
+    image: 'https://res.cloudinary.com/dr8pwzxzn/image/upload/v1743108764/seguroart_irptfn.avif',
+    alt: 'Mesa de trabajo con casco de construcción y dos brazos estrechando la mano',
+    text: 'Trabaja en confianza con la mejor PROTECCIÓN.',
+  },
+  {
+    image: 'https://res.cloudinary.com/dr8pwzxzn/image/upload/v1743110797/monopat%C3%B3n_jvcrvp.webp',
+    alt: 'Mujer montando un monopatín',
+    text: 'Manejate con TRANQUILIDAD por la ciudad.',
+  },
+
 ];
 
 export default Slides;

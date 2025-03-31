@@ -4,11 +4,10 @@ import PartnersCard from './PartnersCard';
 
 const PartnerSection = React.memo(() => {
   return (
-    <div className='bg-bgDarkBlue flex justify-center rounded m-4 p-2 border-blueGray'>
+    <div className='bg-bgDarkBlue flex flex-col md:flex-row justify-center items-center gap-4 p-6 border border-blueGray/20 rounded-lg mx-4 my-6'>
       <CallToActionSection />
       <PartnersCard />
     </div>
-
   );
 });
 
