@@ -3,17 +3,24 @@ import { CTAButton } from "./utilities/CTAButton";
 
 const CallToActionSection = () => {
   return (
-    <div className="flex-1 p-4 text-blueGray flex flex-col justify-center items-start">
-      <h1 className='mb-4 text-4xl'>Seguro, simple. Rápido.</h1>
-      <p className='mb-2 text-xl'>
-        Cotizá tu vehículo y asegurá en minutos con nuestra herramienta en
-        <img
-          className='ml-2 inline w-15 h-15 object-contain rounded-lg shadow-md'
-          src={atm}
-          alt="Logo of ATM Seguros"
-        />
-      </p>
-      <CTAButton btnText="¡COTIZA YA!" href="https://ecommerce.atmseguros.com.ar/" />
+    <div className="flex-1 p-6 text-blueGray flex flex-col justify-start items-center text-center bg-white/5 rounded-lg border border-blueGray/20 h-full">
+      <div className="flex flex-col justify-start items-center w-full">
+        <h1 className='mb-6 text-4xl md:text-5xl font-bold text-lightBlue'>
+          Seguro, simple. Rápido.
+        </h1>
+        <p className='mb-6 text-xl md:text-2xl max-w-2xl'>
+          Con nuestra herramienta de cotización en 
+          <img
+            className='m-2 inline w-16 h-16 object-contain rounded-lg shadow-lg'
+            src={atm}
+            alt="Logo of ATM Seguros"
+          />
+          cargá los datos de tu vehículo y asegurá en minutos.
+        </p>
+        <div className="transform hover:scale-105 transition-transform duration-300 mt-auto">
+          <CTAButton btnText="¡COTIZA YA!" href="https://ecommerce.atmseguros.com.ar/" />
+        </div>
+      </div>
     </div>
   );
 };

@@ -31,7 +31,7 @@ export const PartnerBenefitsModal = ({ partner, onClose, onNext, onPrevious, isF
             />
           </div>
           <div className="modal-display-right">
-            <h3 className="text-2xl font-federo text-center text-Golden mb-6">Beneficios</h3>
+            <h3 className="text-2xl font-federo text-center text-Golden mb-2">Beneficios</h3>
             <ul className="space-y-4">
               {partner.benefits.map((benefit, index) => (
                 <li key={index} className="flex items-center gap-3 text-blueGray text-lg font-federo">
@@ -40,24 +40,42 @@ export const PartnerBenefitsModal = ({ partner, onClose, onNext, onPrevious, isF
                 </li>
               ))}
             </ul>
-            <div className="flex justify-center gap-4 mt-8">
-              <button 
-                onClick={onPrevious}
-                disabled={isFirst}
-                className={`p-2 rounded-full transition-all duration-300 ${isFirst ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/10'}`}
-                aria-label="Partner anterior"
-              >
-                <FaChevronLeft className="text-2xl text-lightBlue" />
-              </button>
-              <button 
-                onClick={onNext}
-                disabled={isLast}
-                className={`p-2 rounded-full transition-all duration-300 ${isLast ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/10'}`}
-                aria-label="Siguiente partner"
-              >
-                <FaChevronRight className="text-2xl text-lightBlue" />
-              </button>
-            </div>
+          </div>
+        </div>
+        <div className="flex justify-around items-center gap-8 m-2">
+          <button
+            onClick={onPrevious}
+            disabled={isFirst}
+            className={`cursor-pointer flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 
+              ${isFirst
+                ? 'opacity-50 cursor-not-allowed bg-white/5'
+                : 'bg-lightBlue/20 hover:bg-lightBlue/30 hover:scale-110'
+              }`}
+            aria-label="Partner anterior"
+          >
+            <FaChevronLeft className="text-2xl text-lightBlue" />
+          </button>
+          <button
+            onClick={onNext}
+            disabled={isLast}
+            className={`cursor-pointer flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 
+              ${isLast
+                ? 'opacity-50 cursor-not-allowed bg-white/5'
+                : 'bg-lightBlue/20 hover:bg-lightBlue/30 hover:scale-110'
+              }`}
+            aria-label="Siguiente partner"
+          >
+            <FaChevronRight className="text-2xl text-lightBlue" />
+          </button>
+        </div>
+        <div className="footer-lightblue">
+          <div className="text-center text-lg">
+            <a
+              href="https://wa.me/5491156999580"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Contact us on WhatsApp"
+            >Hablemos por WhatsApp</a>
           </div>
         </div>
       </div>

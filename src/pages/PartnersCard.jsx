@@ -27,17 +27,19 @@ const PartnersCard = React.memo(() => {
 
   return (
     <>
-      <div className="description-container bg-bgDarkBlue p-6 flex-1 rounded-lg">
-        <h2 className='text-2xl mb-6 text-center text-blueGray'>Con las siguientes compañías:</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
+      <div className="description-container bg-white/5 p-6 flex-1 rounded-lg border border-blueGray/20 h-full">
+        <h2 className='text-2xl md:text-3xl mb-8 text-center text-lightBlue font-bold'>
+          Con las siguientes compañías:
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6 justify-items-center">
           {PartnersLogos.map((partner, index) => (
             <div 
               key={partner.id} 
-              className="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center bg-white/5 rounded-lg hover:bg-white/10 transition-colors duration-300 cursor-pointer"
+              className="w-24 h-24 md:w-28 md:h-28 flex items-center justify-center bg-white/10 rounded-lg hover:bg-white/20 transition-all duration-300 cursor-pointer transform hover:scale-105 shadow-lg"
               onClick={() => handlePartnerClick(partner, index)}
             >
               <img
-                className='w-full h-full object-contain p-2'
+                className='w-full h-full object-contain p-3'
                 src={partner.logo}
                 alt={`Logo of ${partner.name}`}
               />
