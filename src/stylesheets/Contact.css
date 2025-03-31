@@ -168,6 +168,11 @@
   align-self: center;
 }
 
+/* Ensure WhatsApp button stays on top */
+.whatsapp-float {
+  z-index: 2;
+}
+
 @media screen and (max-width: 850px) {
   .modal-content-4 {
     width: 95%;

@@ -36,6 +36,16 @@ export const Contact = ({ openCloseModal }) => (
           />
         </div>
       </div>
+      <div className="footer-lightblue">
+          <div className="text-center text-lg">
+            <a
+              href="https://wa.me/5491156999580"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Contact us on WhatsApp"
+            >Hablemos por WhatsApp</a>
+          </div>
+        </div>
     </div>
   </div>
 );
