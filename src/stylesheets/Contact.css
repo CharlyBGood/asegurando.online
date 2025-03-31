@@ -112,8 +112,7 @@
   color: #44b0de;
 }
 
-.modal-display-right h3 {
-  font-size: 1.1em;
+.modal-display-right h3 {  
   text-align: center;
   font-weight: lighter;
 }
@@ -163,7 +162,7 @@
 }
 
 .logoGold {
-  width: 16vw;
+  width: 13vw;
   padding: 0.5em;
   align-self: center;
 }
