@@ -8,7 +8,7 @@ export const Slideshow = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % Slides.length);
-    }, 5000);
+    }, 2000);
 
     return () => clearInterval(timer);
   }, []);
@@ -22,7 +22,7 @@ export const Slideshow = () => {
   };
 
   return (
-    <div className="relative w-full h-[21em] overflow-hidden">
+    <div className="relative w-full h-[15em] overflow-hidden">
       {Slides.map((slide, index) => (
         <div
           key={index}
@@ -41,19 +41,19 @@ export const Slideshow = () => {
       ))}
       <button
         onClick={prevSlide}
-        className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-bgDarkBlue/50 hover:bg-bgDarkBlue/70 text-white text-2xl md:text-3xl p-2 rounded-full transition-colors"
+        className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-bgDarkBlue/50 hover:bg-bgDarkBlue/70 text-white text-2xl md:text-3xl p-2 rounded-full transition-colors cursor-pointer"
         aria-label="Previous slide"
       >
         <FiChevronLeft />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-bgDarkBlue/50 hover:bg-bgDarkBlue/70 text-white text-2xl md:text-3xl p-2 rounded-full transition-colors"
+        className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-bgDarkBlue/50 hover:bg-bgDarkBlue/70 text-white text-2xl md:text-3xl p-2 rounded-full transition-colors cursor-pointer"
         aria-label="Next slide"
       >
         <FiChevronRight />
       </button>
-      <div className="absolute bottom-0 left-0 right-0 flex justify-center gap-2">
+      <div className="absolute bottom-0 left-0 right-0 flex justify-center gap-2 p-[.5em]">
         {Slides.map((_, index) => (
           <button
             key={index}

@@ -6,7 +6,7 @@ export const Contact = ({ openCloseModal }) => (
   <div className="modal-container-4">
     <div className="modal-content-4">
       <div className="modal-4-header">
-        <h1>Contactanos</h1>
+        <h1 className="text-2xl font-federo text-Black">Contactanos</h1>
         <span className="close-4" onClick={openCloseModal}>×</span>
       </div>
       <div className="modal-display-4">

@@ -20,7 +20,7 @@
 .modal-content-4 {
   display: flex;
   flex-direction: column;
-  margin: 7% auto;
+  margin: 11% auto;
   padding: 0.3em;
   border-radius: 0.5em;
   width: 85%;
@@ -167,7 +167,6 @@
   align-self: center;
 }
 
-/* Ensure WhatsApp button stays on top */
 .whatsapp-float {
   z-index: 2;
 }
