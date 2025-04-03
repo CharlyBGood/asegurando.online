@@ -35,7 +35,7 @@ export const Slideshow = () => {
             className="w-full h-full object-cover"
           />
           <div className="mb-2 p-2 opacity-75 absolute bg-bgDarkBlue bottom-4 left-0 right-0">
-            <h4 className="text-2xl text-center">{slide.text}</h4>
+            <h4 className="text-lg md:text-2xl text-center">{slide.text}</h4>
           </div>
         </div>
       ))}
