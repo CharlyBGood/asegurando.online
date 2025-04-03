@@ -77,6 +77,17 @@ const PartnersLogos = [
       "Atención médica"
     ]
   },
+  {
+    id: 9,
+    name: 'atm',
+    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741819703/atmLogo_zgzx7l.png",
+    benefits: [
+      "Cobertura Automovilística",
+      "Servicio de emergencia",
+      "Red de profesionales",
+      "Atención 24/7"
+    ]
+  }
 ];
 
 export default PartnersLogos;

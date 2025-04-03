@@ -19,7 +19,13 @@ export const PartnerBenefitsModal = ({ partner, onClose, onNext, onPrevious, isF
     <div className="modal-container-4">
       <div className="modal-content-4">
         <div className="modal-4-header">
-          <h1 className="text-2xl font-federo text-Black">{partner.name}</h1>
+          <div className="flex items-center justify-center flex-1">
+            <img
+              src={partner.logo}
+              alt={`Logo of ${partner.name}`}
+              className="h-8 w-auto object-contain"
+            />
+          </div>
           <span className="close-4" onClick={onClose}>×</span>
         </div>
         <div className="modal-display-4">
