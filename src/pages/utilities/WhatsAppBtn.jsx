@@ -24,7 +24,7 @@ export const WhatsAppBtn = () => {
 
   return (
     <a
-      className={`fixed z-40 bottom-20 right-6 bg-[#25D366] hover:bg-[#20bd5a] text-white p-3 rounded-full shadow-lg transition-all duration-1000 ease-in-out transform ${
+      className={`fixed z-40 bottom-32 right-6 bg-[#25D366] hover:bg-[#20bd5a] text-white p-3 rounded-full shadow-lg transition-all duration-1000 ease-in-out transform ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       } ${
         isPulsing ? 'scale-110 shadow-xl' : 'scale-100 shadow-lg'
