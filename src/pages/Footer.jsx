@@ -11,8 +11,10 @@ const Footer = () => {
           <img src={superintendencia} alt="Super intendencia de seguros de la Nación" />
         </div>
         <div className='w-full flex justify-evenly items-center bg-bgDarkBlue p-3 '>
-          <span>Bs. As., Argentina</span>
-          <span>(011) 15-5699-9580</span>
+          <div class="flex flex-col items-center">
+            <span>Bs. As., Argentina</span>
+            <span>(011) 15-5699-9580</span>
+          </div>
           {
             SMLinks.map((link, index) => {
               return (
