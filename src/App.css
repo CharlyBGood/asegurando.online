@@ -21,10 +21,10 @@
   align-items: center;
 }
 
-.respalda-text-container {
+/* .respalda-text-container {
   position: relative;
   left: -13%;
-}
+} */
 
 .respalda-text-container h2,
 .respalda-text-container p {

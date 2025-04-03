@@ -1,19 +1,32 @@
+import { useEffect, useState } from 'react';
+
 const WhoWeAre = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Trigger animation after component mounts
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 300);
+    
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="w-full py-6 px-4 md:py-8 md:px-6">
-      <div className="respalda-container flex flex-col md:flex-row items-center gap-6 md:gap-8 p-4 md:p-6 bg-white/5 rounded-lg border border-blueGray/20">
-        <div className="flex-1 w-full md:w-1/2 h-64 md:h-80 bg-image-sonicMan bg-cover bg-center rounded-lg shadow-lg">
+    <div className="w-full py-8 px-4 md:py-12 md:px-6">
+      <div className={`respalda-container flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 p-4 md:p-6 transition-all duration-1000 ease-in-out transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <div className={`flex-1 w-full md:w-1/2 h-64 md:h-80 bg-image-sonicMan bg-cover bg-center rounded-lg shadow-lg transition-all duration-1000 delay-300 ease-in-out transform ${isVisible ? 'scale-100' : 'scale-95'}`}>
         </div>
-        <div className="flex-1 w-full md:w-1/2 respalda-text-container">
-          <h2 className="text-2xl md:text-3xl mb-4 text-center md:text-left font-federo">
+        <div className={`flex-1 w-full md:w-1/2 respalda-text-container flex flex-col items-center justify-center transition-all duration-1000 delay-500 ease-in-out transform ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
+          <h2 className="text-2xl md:text-3xl mb-6 text-center font-federo">
             <span className="text-Golden">Q</span>uién <span className="text-Golden">N</span>os <span className="text-Golden">R</span>espalda
           </h2>
-          <p className="text-blueGray text-base md:text-lg text-center md:text-left mb-4 leading-relaxed">
+          <p className="text-blueGray text-base md:text-lg text-center mb-6 leading-relaxed max-w-xl">
             <a className="text-lightBlue hover:text-lightBlue/80 transition-colors">Maschio y Asoc.</a> se complementa con{" "}
             <span className="text-Golden font-bold">Grupo Baioni Internacional</span> – Broker líder con más de 40 años de
             experiencia en el mercado y profesionales altamente capacitados.
           </p>
-          <p className="text-blueGray text-base md:text-lg text-center md:text-left leading-relaxed">
+          <p className="text-blueGray text-base md:text-lg text-center leading-relaxed max-w-xl">
             Encontramos así un aliado estratégico que brinda respaldo a nuestro canal de
             comercialización.
           </p>
