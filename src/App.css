@@ -14,17 +14,12 @@
 }
 
 .respalda-container {
-  width: 85%;
+  width: 100%;
   margin: 1em auto;
   height: 65vh;
   align-self: center;
   align-items: center;
 }
-
-/* .respalda-text-container {
-  position: relative;
-  left: -13%;
-} */
 
 .respalda-text-container h2,
 .respalda-text-container p {
