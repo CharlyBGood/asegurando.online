@@ -103,25 +103,9 @@ body,
   width: 14em;
 }
 
-/* navbar styles */
 
-
-
-
-/* welcome */
-/* .welcome-section,
-.about-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  margin: 0 auto;
-  background-color: var(--bgrSolid);
-} */
+@media screen and (max-width: 850px) {
+  .header-logo-name {
+    width: 11em;
+  }
+}
