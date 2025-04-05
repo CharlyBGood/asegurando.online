@@ -11,7 +11,7 @@ const Footer = () => {
           <img src={superintendencia} alt="Super intendencia de seguros de la Nación" />
         </div>
         <div className='w-full flex justify-evenly items-center bg-bgDarkBlue p-3 '>
-          <div class="flex flex-col items-center">
+          <div className="flex flex-col items-center">
             <span>Bs. As., Argentina</span>
             <span>(011) 15-5699-9580</span>
           </div>

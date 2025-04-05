@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import Slides from './utilities/SlideImages'
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi"
+import Slides from './utilities/SlideImages';
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 export const Slideshow = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -22,12 +22,13 @@ export const Slideshow = () => {
   };
 
   return (
-    <div className="relative w-full h-[21em] overflow-hidden">
+    <div className="relative w-full h-[17em] md:h-[21em] overflow-hidden">
       {Slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute w-full h-full transition-opacity duration-500 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
-            }`}
+          className={`absolute w-full h-full transition-opacity duration-500 ${
+            index === currentSlide ? 'opacity-100' : 'opacity-0'
+          }`}
         >
           <img
             src={slide.image}
@@ -58,8 +59,9 @@ export const Slideshow = () => {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all ${index === currentSlide ? "bg-lightBlue scale-125" : "bg-blueGray/50"
-              }`}
+            className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all ${
+              index === currentSlide ? 'bg-lightBlue scale-125' : 'bg-blueGray/50'
+            }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
