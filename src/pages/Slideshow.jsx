@@ -22,7 +22,7 @@ export const Slideshow = () => {
   };
 
   return (
-    <div className="relative w-full h-[15em] overflow-hidden">
+    <div className="relative w-full h-[21em] overflow-hidden">
       {Slides.map((slide, index) => (
         <div
           key={index}
