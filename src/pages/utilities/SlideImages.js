@@ -35,7 +35,7 @@ const Slides = [
     text: 'Trabaja en confianza con la mejor PROTECCIÓN.',
   },
   {
-    image: 'https://res.cloudinary.com/dr8pwzxzn/image/upload/v1743711857/patinetewoman_ip0wfb.png',
+    image: 'https://res.cloudinary.com/dr8pwzxzn/image/upload/v1743715975/coolskategirl_gubxc2.png',
     alt: 'Mujer montando un monopatín',
     text: 'Manejate con TRANQUILIDAD por la ciudad.',
   },
