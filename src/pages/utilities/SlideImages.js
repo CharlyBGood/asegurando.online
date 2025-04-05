@@ -30,12 +30,12 @@ const Slides = [
     text: 'Disfrutá el CAMINO, con una mejor opción.',
   },
   {
-    image: 'https://res.cloudinary.com/dr8pwzxzn/image/upload/v1743108764/seguroart_irptfn.avif',
+    image: 'https://res.cloudinary.com/dr8pwzxzn/image/upload/v1743820630/coolmanatwork_qqhg4j.jpg',
     alt: 'Mesa de trabajo con casco de construcción y dos brazos estrechando la mano',
     text: 'Trabaja en confianza con la mejor PROTECCIÓN.',
   },
   {
-    image: 'https://res.cloudinary.com/dr8pwzxzn/image/upload/v1743715975/coolskategirl_gubxc2.png',
+    image: 'https://res.cloudinary.com/dr8pwzxzn/image/upload/v1743821450/coolchicamonopatin_ovfix8.jpg',
     alt: 'Mujer montando un monopatín',
     text: 'Manejate con TRANQUILIDAD por la ciudad.',
   },

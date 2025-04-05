@@ -8,7 +8,7 @@ export const Slideshow = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % Slides.length);
-    }, 2000);
+    }, 4000);
 
     return () => clearInterval(timer);
   }, []);
