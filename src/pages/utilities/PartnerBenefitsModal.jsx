@@ -40,11 +40,11 @@ export const PartnerBenefitsModal = ({ partner, onClose, onNext, onPrevious, isF
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-bgDarkBlue/90 overflow-y-auto">
       <div className="relative w-full max-w-md md:max-w-lg mx-4 p-6 bg-bgDarkBlue rounded-lg shadow-lg border border-blueGray/20">
         {/* Top Image Section */}
-        <div className="flex justify-center items-center bg-lightBlue p-4 rounded-t-lg">
+        <div className="flex justify-center items-center bg-lightBlue p-2 rounded-t-lg">
           <img
             src={partner.logo}
             alt={`Logo of ${partner.name}`}
-            className="h-12 w-auto object-contain"
+            className="p-[.5em] h-12 w-auto object-contain"
           />
         </div>
 
@@ -80,11 +80,10 @@ export const PartnerBenefitsModal = ({ partner, onClose, onNext, onPrevious, isF
           <button
             onClick={onPrevious}
             disabled={isFirst}
-            className={`flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full transition-all duration-300 ${
-              isFirst
+            className={`cursor-pointer flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full transition-all duration-300 ${isFirst
                 ? 'opacity-50 cursor-not-allowed bg-blueGray/20'
                 : 'bg-lightBlue hover:bg-lightBlueHover hover:scale-110'
-            }`}
+              }`}
             aria-label="Previous partner"
           >
             <FaChevronLeft className="text-lg md:text-xl text-Black" />
@@ -92,11 +91,10 @@ export const PartnerBenefitsModal = ({ partner, onClose, onNext, onPrevious, isF
           <button
             onClick={onNext}
             disabled={isLast}
-            className={`flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full transition-all duration-300 ${
-              isLast
+            className={`cursor-pointer flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full transition-all duration-300 ${isLast
                 ? 'opacity-50 cursor-not-allowed bg-blueGray/20'
                 : 'bg-lightBlue hover:bg-lightBlueHover hover:scale-110'
-            }`}
+              }`}
             aria-label="Next partner"
           >
             <FaChevronRight className="text-lg md:text-xl text-Black" />
@@ -115,9 +113,8 @@ export const PartnerBenefitsModal = ({ partner, onClose, onNext, onPrevious, isF
             Hablemos por WhatsApp
           </a>
           <FaWhatsapp
-            className={`inline-block ml-2 text-lg ${
-              isPulsing ? 'animate-pulse text-Black' : 'text-Black'
-            }`}
+            className={`inline-block ml-2 text-lg ${isPulsing ? 'animate-pulse text-Black' : 'text-Black'
+              }`}
           />
         </div>
       </div>
