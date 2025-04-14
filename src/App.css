@@ -6,17 +6,17 @@
 }
 
 .bg-image-sonicMan {
-  background-image: url("https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744658012/image_ewgbmb.svg");
+  /* background-image: url("https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744658012/image_ewgbmb.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   height: 100%;
 }
 
 .respalda-container {
   width: 100%;
-  margin: 1em auto;
-  height: 65vh;
+  /* margin: 1em auto; */
+  /* height: 65vh; */
   align-self: center;
   align-items: center;
 }

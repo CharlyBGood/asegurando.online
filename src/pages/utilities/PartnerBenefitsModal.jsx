@@ -43,7 +43,7 @@ export const PartnerBenefitsModal = ({ partner, onClose, onNext, onPrevious, isF
           <img
             src={partner.logo}
             alt={`Logo of ${partner.name}`}
-            className="p-[.5em] h-12 w-auto object-contain"
+            className="p-[.5em] h-12 w-42 object-contain"
           />
           <button
             onClick={onClose}
