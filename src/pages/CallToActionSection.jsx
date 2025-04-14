@@ -1,4 +1,4 @@
-const atm = "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741819703/atmLogo_zgzx7l.png";
+const atm = "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744650372/atm_mm2aaz.svg";
 import { CTAButton } from "./utilities/CTAButton";
 
 const CallToActionSection = () => {

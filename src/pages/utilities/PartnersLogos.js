@@ -2,7 +2,7 @@ const PartnersLogos = [
   {
     id: 2,
     name: 'Galicia Seguros',
-    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741819703/galiciaseguros_pspdql.png",
+    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744652832/galiciaseguros_qogctp.svg",
     benefits: [
       "Cobertura nacional",
       "Asistencia 24/7",
@@ -13,7 +13,7 @@ const PartnersLogos = [
   {
     id: 3,
     name: 'Mapfre Seguros',
-    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741819704/mapfre_omv7bf.png",
+    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744650374/mapfre_lhfkea.svg",
     benefits: [
       "Cobertura internacional",
       "Servicio premium",
@@ -24,7 +24,7 @@ const PartnersLogos = [
   {
     id: 4,
     name: 'Mercantil Andina Seguros',
-    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741819703/mercantilandinar_dneoh9.png",
+    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744650373/mercantilandina_bzot6l.svg",
     benefits: [
       "Cobertura personalizada",
       "Atención personalizada",
@@ -36,7 +36,7 @@ const PartnersLogos = [
   {
     id: 5,
     name: 'Galeno Seguros',
-    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741819703/galeno_teamwf.png",
+    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744650373/galeno_awuovv.svg",
     benefits: [
       "Cobertura médica",
       "Servicio de emergencia",
@@ -47,7 +47,7 @@ const PartnersLogos = [
   {
     id: 6,
     name: 'Libra Seguros',
-    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741819704/libra_mpemvp.png",
+    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744650374/libra_jc9caq.svg",
     benefits: [
       "Cobertura integral",
       "Servicio de emergencia",
@@ -58,7 +58,7 @@ const PartnersLogos = [
   {
     id: 7,
     name: 'Provincia Seguros',
-    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741819703/provinciaseguros_vd6xtf.png",
+    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744650373/provinciaseguros_tmcow6.svg",
     benefits: [
       "Cobertura estatal",
       "Precios accesibles",
@@ -69,7 +69,7 @@ const PartnersLogos = [
   {
     id: 8,
     name: 'Provincia ART',
-    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741882726/provinciaart_bjyait.png",
+    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744650372/provinciaart_flu3eq.svg",
     benefits: [
       "Cobertura laboral",
       "Servicio de emergencia",
@@ -80,12 +80,23 @@ const PartnersLogos = [
   {
     id: 9,
     name: 'atm',
-    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741819703/atmLogo_zgzx7l.png",
+    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744650372/atm_mm2aaz.svg",
     benefits: [
       "Cobertura Automovilística",
       "Servicio de emergencia",
       "Red de profesionales",
       "Atención 24/7"
+    ]
+  },
+  {
+    id: 10,
+    name: 'Experta Seguros',
+    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744650372/experta_gc4ejq.svg",
+    benefits: [
+      "Cobertura integral",
+      "Servicio de emergencia",
+      "Descuentos especiales",
+      "Atención personalizada"
     ]
   }
 ];

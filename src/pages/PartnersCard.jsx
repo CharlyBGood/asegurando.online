@@ -35,7 +35,7 @@ const PartnersCard = React.memo(() => {
           {PartnersLogos.map((partner, index) => (
             <div 
               key={partner.id} 
-              className="w-full h-20 sm:w-full sm:h-20 md:w-full md:h-24 flex items-center justify-center bg-white/10 rounded-lg hover:bg-white/20 transition-all duration-300 cursor-pointer transform hover:scale-105 shadow-lg"
+              className="w-full h-20 sm:w-full sm:h-20 md:w-full md:h-24 flex items-center justify-center bg-blueGray/90 rounded-lg hover:bg-blueGray/100 transition-all duration-300 cursor-pointer transform hover:scale-105 shadow-lg"
               onClick={() => handlePartnerClick(partner, index)}
             >
               <img
