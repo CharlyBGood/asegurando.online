@@ -2,7 +2,7 @@ const Slides = [
   {
     image: 'https://res.cloudinary.com/dr8pwzxzn/image/upload/v1741811429/buildings_usntuj.png',
     alt: 'Edificios modernos en la ciudad',
-    text: 'La CALIDAD de servicio se mide con la SATISFACCIÓN de nuestros ASEGURADOS.',
+    text: 'La CALIDAD de SERVICIO se mide con la SATISFACCIÓN de nuestros ASEGURADOS.',
   },
   {
     image: 'https://res.cloudinary.com/dr8pwzxzn/image/upload/v1743995894/coolboat_apqo4l.jpg',
