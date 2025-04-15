@@ -41,13 +41,12 @@ export const Contact = ({ openCloseModal }) => {
             <p className="text-blueGray">25 de Mayo 432 Piso 4*, C.A.B.A</p>
             <p className="text-blueGray">Lunes a Viernes de 10:00 a 17:00 hs.</p>
             <CTAButton href="https://goo.gl/maps/sAjkAx6bxECxoMKv5">VER MAPA</CTAButton>
-            <p className="text-Golden font-semibold text-[.8em]">Las citas deben ser acordadas previamente.</p>
+
           </div>
 
           {/* Right Section */}
           <div className="flex-1 flex flex-col items-center gap-4">
             <h3 className="text-lg font-semibold text-Golden">Contacto</h3>
-            <p className="text-blueGray">Contactanos por email a:</p>
             <a
               className="text-lightBlue hover:text-lightBlueHover font-semibold"
               href="mailto:maschiomartin@gmail.com"
@@ -71,11 +70,12 @@ export const Contact = ({ openCloseModal }) => {
             aria-label="Contact us on WhatsApp"
           >
             Hablemos por WhatsApp
-          </a>
+          </a>          
           <FaWhatsapp
             className={`inline-block ml-2 text-lg ${isPulsing ? "animate-pulse text-Black" : "text-Black"
               }`}
           />
+          <p className="text-Black font-semibold text-[.8em]">Las citas deben ser acordadas previamente.</p>
         </div>
       </div>
     </div>
