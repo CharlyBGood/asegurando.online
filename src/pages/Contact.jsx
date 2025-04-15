@@ -66,15 +66,16 @@ export const Contact = ({ openCloseModal }) => {
             href="https://wa.me/5491156999580"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-Black font-semibold hover:underline"
+            className="text-Black font-semibold hover:underline tracking-wide animate-bounce-once"
             aria-label="Contact us on WhatsApp"
           >
             Hablemos por WhatsApp
-          </a>          
-          <FaWhatsapp
-            className={`inline-block ml-2 text-lg ${isPulsing ? "animate-pulse text-Black" : "text-Black"
+            <FaWhatsapp
+              className={`inline-block ml-2 text-lg ${
+                isPulsing ? "animate-pulse text-Black" : "text-Black"
               }`}
-          />
+            />
+          </a>
           <p className="text-Black font-semibold text-[.8em]">Las citas deben ser acordadas previamente.</p>
         </div>
       </div>
