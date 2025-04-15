@@ -31,7 +31,7 @@ export const PartnerBenefitsModal = ({ partner, onClose, onNext, onPrevious, isF
   useEffect(() => {
     const pulseTimer = setInterval(() => {
       setIsPulsing((prev) => !prev);
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(pulseTimer);
   }, []);
@@ -104,15 +104,16 @@ export const PartnerBenefitsModal = ({ partner, onClose, onNext, onPrevious, isF
             href="https://wa.me/5491156999580"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-Black font-semibold hover:underline"
+            className={`font-semibold hover:underline tracking-wide animate-bounce-once text-lg ${isPulsing ? "animate-pulse text-Black" : "text-bgDarkBlue"
+              }`}
             aria-label="Contact us on WhatsApp"
           >
             Hablemos por WhatsApp
+            <FaWhatsapp
+              className={`inline-block ml-2 text-lg ${isPulsing ? "animate-pulse text-Black" : "text-bgDarkBlue"
+                }`}
+            />
           </a>
-          <FaWhatsapp
-            className={`inline-block ml-2 text-lg ${isPulsing ? 'animate-pulse text-Black' : 'text-Black'
-              }`}
-          />
         </div>
       </div>
     </div>

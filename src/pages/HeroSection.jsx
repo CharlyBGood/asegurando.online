@@ -8,10 +8,10 @@ const HeroSection = () => {
       <div className="flex-grow">
         <Slideshow />
       </div>
-      <div className="w-full mt-0 mb-0"> {/* Ensure no extra spacing */}
+      <div className="w-full mt-0 mb-0">
         <PartnerSection />
       </div>
-      <div className="w-full mt-0"> {/* Remove unnecessary top margin */}
+      <div className="w-full mt-0">
         <WhoWeAre />
       </div>
     </div>

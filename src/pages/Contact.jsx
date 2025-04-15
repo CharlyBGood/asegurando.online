@@ -69,12 +69,13 @@ export const Contact = ({ openCloseModal }) => {
             href="https://wa.me/5491156999580"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-Black font-semibold hover:underline tracking-wide animate-bounce-once"
+            className={`font-semibold hover:underline tracking-wide animate-bounce-once text-lg ${isPulsing ? "animate-pulse text-Black" : "text-bgDarkBlue"
+              }`}
             aria-label="Contact us on WhatsApp"
           >
             Hablemos por WhatsApp
             <FaWhatsapp
-              className={`inline-block ml-2 text-lg ${isPulsing ? "animate-pulse text-Black" : "text-Black"
+              className={`inline-block ml-2 text-lg ${isPulsing ? "animate-pulse text-Black" : "text-bgDarkBlue"
                 }`}
             />
           </a>
