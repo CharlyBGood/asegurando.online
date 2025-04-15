@@ -32,7 +32,7 @@ const Slides = [
   {
     image: 'https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744681429/coolworkers_edxu46.jpg',
     alt: 'Grupo de trabajo con casco de construcción y dos brazos estrechando la mano',
-    text: 'Trabaja en confianza con la mejor PROTECCIÓN.',
+    text: 'Trabaja seguro con la mejor PROTECCIÓN.',
   },
   {
     image: 'https://res.cloudinary.com/dr8pwzxzn/image/upload/v1743995823/hombre-joven-tiro-completo-sentado-scooter_23-2149356786_ai6q0s.jpg',

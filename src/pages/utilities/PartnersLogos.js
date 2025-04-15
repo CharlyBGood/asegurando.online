@@ -98,7 +98,30 @@ const PartnersLogos = [
       "Descuentos especiales",
       "Atención personalizada"
     ]
+  },
+  {
+    id: 11,
+    name: 'Federación Patronal Seguros',
+    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744689779/federacionpatronal_hpc4et.svg",
+    benefits: [
+      "Cobertura integral",
+      "Servicio de emergencia",
+      "Descuentos especiales",
+      "Atención personalizada"
+    ]
+  },
+  {
+    id: 12,
+    name: 'Asociart seguros',
+    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744689650/asociart_sdh9wy.svg",
+    benefits: [
+      "Cobertura integral",
+      "Servicio de emergencia",
+      "Descuentos especiales",
+      "Atención personalizada"
+    ]
   }
+
 ];
 
 export default PartnersLogos;
