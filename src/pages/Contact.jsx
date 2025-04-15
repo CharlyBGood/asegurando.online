@@ -40,7 +40,8 @@ export const Contact = ({ openCloseModal }) => {
             <h3 className="text-lg font-semibold text-Golden">Ubicación</h3>
             <p className="text-blueGray">25 de Mayo 432 Piso 4*, C.A.B.A</p>
             <p className="text-blueGray">Lunes a Viernes de 10:00 a 17:00 hs.</p>
-            <CTAButton href="https://goo.gl/maps/sAjkAx6bxECxoMKv5">VER MAPA</CTAButton>
+            <CTAButton href="https://goo.gl/maps/sAjkAx6bxECxoMKv5"
+              className="w-32 h-[2.3em] text-sm">VER MAPA</CTAButton>
 
           </div>
 
@@ -54,7 +55,9 @@ export const Contact = ({ openCloseModal }) => {
               maschiomartin@gmail.com
             </a>
             <p className="text-blueGray">TEL.: +54 9 11 5699-9580</p>
-            <CTAButton href="tel:+54 9 11 5699-9580">
+            <CTAButton
+              href="tel:+54 9 11 5699-9580"
+              className="w-32 h-[2.3em] text-sm">
               <FaPhone />
             </CTAButton>
           </div>
@@ -71,9 +74,8 @@ export const Contact = ({ openCloseModal }) => {
           >
             Hablemos por WhatsApp
             <FaWhatsapp
-              className={`inline-block ml-2 text-lg ${
-                isPulsing ? "animate-pulse text-Black" : "text-Black"
-              }`}
+              className={`inline-block ml-2 text-lg ${isPulsing ? "animate-pulse text-Black" : "text-Black"
+                }`}
             />
           </a>
           <p className="text-Black font-semibold text-[.8em]">Las citas deben ser acordadas previamente.</p>
