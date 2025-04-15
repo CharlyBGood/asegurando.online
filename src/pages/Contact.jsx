@@ -15,7 +15,7 @@ export const Contact = ({ openCloseModal }) => {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-Black"
+      className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-bgDarkBlue/90"
     >
       <div className="relative w-full max-w-md md:max-w-lg mx-4 bg-bgDarkBlue rounded-lg shadow-lg border border-blueGray/20">
         {/* Header */}
