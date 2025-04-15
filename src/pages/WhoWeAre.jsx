@@ -24,7 +24,7 @@ const WhoWeAre = () => {
           <p className="text-blueGray text-base md:text-lg text-left mb-6 leading-relaxed max-w-xl">
             <a className="text-lightBlue hover:text-lightBlue/80 transition-colors">Maschio y Asoc.</a> se complementa con{" "}
             <span className="text-Golden font-bold">Grupo Baioni Internacional</span> – Broker líder con más de 40 años de
-            experiencia en el mercado y profesionales altamente capacitados.
+            experiencia en el mercado con profesionales altamente capacitados.
           </p>
           <p className="text-blueGray text-base md:text-lg text-left leading-relaxed max-w-xl">
             Encontramos así un aliado estratégico que brinda respaldo a nuestro canal de

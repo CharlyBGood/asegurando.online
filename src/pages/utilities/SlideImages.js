@@ -30,13 +30,13 @@ const Slides = [
     text: 'Disfrutá el CAMINO, con una mejor opción.',
   },
   {
-    image: 'https://res.cloudinary.com/dr8pwzxzn/image/upload/v1743820630/coolmanatwork_qqhg4j.jpg',
-    alt: 'Mesa de trabajo con casco de construcción y dos brazos estrechando la mano',
+    image: 'https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744681429/coolworkers_edxu46.jpg',
+    alt: 'Grupo de trabajo con casco de construcción y dos brazos estrechando la mano',
     text: 'Trabaja en confianza con la mejor PROTECCIÓN.',
   },
   {
-    image: 'https://img.freepik.com/foto-gratis/hombre-joven-tiro-completo-sentado-scooter_23-2149356786.jpg?t=st=1743994702~exp=1743998302~hmac=a98dbf9a2abf597611b7aba7c83eec1956bd088a00c2387fbb18ddba73fc2ad5&w=996',
-    alt: 'Mujer montando un monopatín',
+    image: 'https://res.cloudinary.com/dr8pwzxzn/image/upload/v1743995823/hombre-joven-tiro-completo-sentado-scooter_23-2149356786_ai6q0s.jpg',
+    alt: 'Hombre sentado con un monopatín',
     text: 'Manejate con TRANQUILIDAD por la ciudad.',
   },
 
