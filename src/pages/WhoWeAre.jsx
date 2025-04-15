@@ -12,7 +12,7 @@ const WhoWeAre = () => {
   }, []);
 
   return (
-    <section className="w-full py-4 md:py-6 px-4 md:px-8 bg-gradient-to-b from-[#03070f] to-[#253878]/10 mt-0"> {/* Reduced padding and removed top margin */}
+    <section className="w-full py-4 md:py-6 px-4 md:px-8 bg-gradient-to-b from-[#03070f] to-[#253878]/10 mt-0"> 
       <div
         className={`max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 transition-all duration-1000 ease-in-out transform ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
@@ -24,7 +24,7 @@ const WhoWeAre = () => {
           }`}
         >
           <img
-            src="https://res.cloudinary.com/dr8pwzxzn/image/upload/v1742829738/photo_5086826439680044633_x_fyhzt9.jpg"
+            src="https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744732326/futura_vnrnsu.png"
             alt="Quién Nos Respalda"
             className="absolute inset-0 w-full h-full object-cover object-center"
             loading="lazy"
