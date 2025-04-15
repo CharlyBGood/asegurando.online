@@ -4,10 +4,10 @@ const PartnersLogos = [
     name: 'Galicia Seguros',
     logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744652832/galiciaseguros_qogctp.svg",
     benefits: [
-      "Cobertura nacional",
-      "Asistencia 24/7",
-      "Descuentos especiales",
-      "Proceso de siniestro simplificado"
+      "Cobertura patrimonial y financiera",
+      "Asistencia permanente",
+      "Descuentos en flotas",
+      "Consultas telefónicas"
     ]
   },
   {
@@ -15,10 +15,10 @@ const PartnersLogos = [
     name: 'Mapfre Seguros',
     logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744650374/mapfre_lhfkea.svg",
     benefits: [
-      "Cobertura internacional",
-      "Servicio premium",
-      "Bonificaciones por antigüedad",
-      "Asistencia en viaje"
+      "Cobertura Nacional y Mercosur",
+      "Red de oficinas en todo el pais",
+      "Descuentos x buena conducta",
+      "Canal exclusivo de siniestros"
     ]
   },
   {
@@ -27,9 +27,9 @@ const PartnersLogos = [
     logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744650373/mercantilandina_bzot6l.svg",
     benefits: [
       "Cobertura personalizada",
-      "Atención personalizada",
-      "Precios competitivos",
-      "Servicio de emergencia"
+      "Con la mejor APP de asegurados",
+      "Los mayores descuentos",
+      "Servicio de Asistencia",
     ]
   },
 
@@ -38,7 +38,7 @@ const PartnersLogos = [
     name: 'Galeno Seguros',
     logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744650373/galeno_awuovv.svg",
     benefits: [
-      "Cobertura médica",
+      "Cobertura patrimoniales y ART",
       "Servicio de emergencia",
       "Red de profesionales",
       "Atención 24/7"
@@ -49,10 +49,10 @@ const PartnersLogos = [
     name: 'Libra Seguros',
     logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744650374/libra_jc9caq.svg",
     benefits: [
-      "Cobertura integral",
-      "Servicio de emergencia",
-      "Descuentos especiales",
-      "Atención personalizada"
+      "Coberturas Orange Time",
+      "Pagas por tiempo de uso",
+      "Ahorras hasta un 40%",
+      "Cobertura bici, monopatin y patineta"
     ]
   },
   {
@@ -63,7 +63,7 @@ const PartnersLogos = [
       "Cobertura estatal",
       "Precios accesibles",
       "Amplia red de talleres",
-      "Servicio de asistencia"
+      "Servicio diferencial"
     ]
   },
   {
@@ -82,10 +82,10 @@ const PartnersLogos = [
     name: 'atm',
     logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744650372/atm_mm2aaz.svg",
     benefits: [
-      "Cobertura Automovilística",
-      "Servicio de emergencia",
-      "Red de profesionales",
-      "Atención 24/7"
+      "Mejor opcion en autos y motos",
+      "Asistencia online",
+      "Importantes bonificaciones",
+      "Obtene tu poliza de inmediato"
     ]
   },
   {
@@ -94,7 +94,7 @@ const PartnersLogos = [
     logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744650372/experta_gc4ejq.svg",
     benefits: [
       "Cobertura integral",
-      "Servicio de emergencia",
+      "Nuevos planes accesibles",
       "Descuentos especiales",
       "Atención personalizada"
     ]
@@ -104,10 +104,10 @@ const PartnersLogos = [
     name: 'Federación Patronal Seguros',
     logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744689779/federacionpatronal_hpc4et.svg",
     benefits: [
-      "Cobertura integral",
-      "Servicio de emergencia",
-      "Descuentos especiales",
-      "Atención personalizada"
+      "Trayectoria y respuesta",
+      "Agilidad en reclamos",
+      "Descuentos a medida",
+      "Atención exclusiva en siniestros"
     ]
   },
   {
@@ -115,10 +115,21 @@ const PartnersLogos = [
     name: 'Asociart seguros',
     logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744689650/asociart_sdh9wy.svg",
     benefits: [
-      "Cobertura integral",
+      "ART y Vida Obligatorio",
+      "Medicina empresarial",
+      "Descuentos sobre F931",
+      "Seguridad e higiene"
+    ]
+  },
+  {
+    id: 13,
+    name: 'Galeno ART',
+    logo: "https://res.cloudinary.com/dr8pwzxzn/image/upload/v1744756011/galenoart_nmjpiu.svg",
+    benefits: [
+      "Cobertura laboral",
       "Servicio de emergencia",
-      "Descuentos especiales",
-      "Atención personalizada"
+      "Asistencia legal",
+      "Atención médica"
     ]
   }
 

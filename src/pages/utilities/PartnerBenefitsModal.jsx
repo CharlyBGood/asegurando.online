@@ -11,17 +11,100 @@ import {
   FaChevronLeft,
   FaChevronRight,
   FaWhatsapp,
+  FaBicycle,
 } from 'react-icons/fa';
 
 const getBenefitIcon = (benefit) => {
   const lowerBenefit = benefit.toLowerCase();
-  if (lowerBenefit.includes('cobertura')) return <FaShieldAlt className="text-lightBlue text-lg" />;
-  if (lowerBenefit.includes('24/7') || lowerBenefit.includes('emergencia')) return <FaClock className="text-lightBlue text-lg" />;
-  if (lowerBenefit.includes('descuento') || lowerBenefit.includes('precio')) return <FaHandHoldingUsd className="text-lightBlue text-lg" />;
-  if (lowerBenefit.includes('personalizada')) return <FaUserCheck className="text-lightBlue text-lg" />;
-  if (lowerBenefit.includes('taller')) return <FaCar className="text-lightBlue text-lg" />;
-  if (lowerBenefit.includes('médica')) return <FaHospital className="text-lightBlue text-lg" />;
-  if (lowerBenefit.includes('legal')) return <FaBriefcase className="text-lightBlue text-lg" />;
+
+  // Cobertura y protección
+  if (
+    lowerBenefit.includes('cobertura') ||
+    lowerBenefit.includes('integral') ||
+    lowerBenefit.includes('protección') ||
+    lowerBenefit.includes('póliza') 
+  ) {
+    return <FaShieldAlt className="text-lightBlue text-lg" />;
+  }
+
+  // Asistencia y emergencias
+  if (
+    lowerBenefit.includes('24/7') ||
+    lowerBenefit.includes('emergencia') ||
+    lowerBenefit.includes('online') ||
+    lowerBenefit.includes('permanente') ||
+    lowerBenefit.includes('asistencia') ||
+    lowerBenefit.includes('poliza') ||
+    lowerBenefit.includes('agilidad') 
+  ) {
+    return <FaClock className="text-lightBlue text-lg" />;
+  }
+
+  // Descuentos y precios
+  if (
+    lowerBenefit.includes('descuento') ||
+    lowerBenefit.includes('bonificación') ||
+    lowerBenefit.includes('precio') ||
+    lowerBenefit.includes('ahorro') ||
+    lowerBenefit.includes('ahorras') ||
+    lowerBenefit.includes('pagas') ||
+    lowerBenefit.includes('accesibles') ||
+    lowerBenefit.includes('bonificaciones') 
+  ) {
+    return <FaHandHoldingUsd className="text-lightBlue text-lg" />;
+  }
+
+  // Atención personalizada
+  if (
+    lowerBenefit.includes('personalizada') ||
+    lowerBenefit.includes('exclusiva') ||
+    lowerBenefit.includes('profesionales') ||
+    lowerBenefit.includes('dedicada') ||
+    lowerBenefit.includes('red') ||
+    lowerBenefit.includes('respuesta')
+  ) {
+    return <FaUserCheck className="text-lightBlue text-lg" />;
+  }
+
+  // Vehículos y talleres
+  if (
+    lowerBenefit.includes('taller') ||
+    lowerBenefit.includes('vehículo') ||
+    lowerBenefit.includes('autos') ||
+    lowerBenefit.includes('reparación')
+  ) {
+    return <FaCar className="text-lightBlue text-lg" />;
+  }
+
+  if (
+    lowerBenefit.includes('motos') ||
+    lowerBenefit.includes('monopatin') ||
+    lowerBenefit.includes('Cobertura bici') ||
+    lowerBenefit.includes('patineta')
+  ) {
+    return <FaBicycle className="text-lightBlue text-lg" />;
+  }
+  // Medicina y salud
+  if (
+    lowerBenefit.includes('médica') ||
+    lowerBenefit.includes('atención médica') ||
+    lowerBenefit.includes('salud') ||
+    lowerBenefit.includes('medicina')
+  ) {
+    return <FaHospital className="text-lightBlue text-lg" />;
+  }
+
+  // Asistencia legal
+  if (
+    lowerBenefit.includes('legal') ||
+    lowerBenefit.includes('abogado') ||
+    lowerBenefit.includes('jurídica') ||
+    lowerBenefit.includes('higiene')
+  ) {
+    return <FaBriefcase className="text-lightBlue text-lg" />;
+  }
+
+  // Ícono predeterminado
   return <FaPhoneAlt className="text-lightBlue text-lg" />;
 };
 
