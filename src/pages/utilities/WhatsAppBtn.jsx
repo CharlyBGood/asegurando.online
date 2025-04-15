@@ -6,12 +6,10 @@ export const WhatsAppBtn = () => {
   const [isPulsing, setIsPulsing] = useState(false);
 
   useEffect(() => {
-    // Trigger animation after component mounts
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 500);
 
-    // Start pulsing animation after a delay
     const pulseTimer = setInterval(() => {
       setIsPulsing((prev) => !prev);
     }, 3000);
@@ -24,7 +22,7 @@ export const WhatsAppBtn = () => {
 
   return (
     <a
-      className={`fixed z-40 bottom-14 sm:bottom-10 right-4 sm:right-6 bg-[#25D366] hover:bg-[#20bd5a] text-white p-2 sm:p-3 rounded-full shadow-lg transition-all duration-1000 ease-in-out transform ${
+      className={`fixed z-40 bottom-4 sm:bottom-8 right-4 sm:right-6 bg-[#25D366] hover:bg-[#20bd5a] text-white p-2 sm:p-3 rounded-full shadow-lg transition-all duration-1000 ease-in-out transform ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       } ${
         isPulsing ? "scale-110 shadow-xl" : "scale-100 shadow-lg"

@@ -28,18 +28,18 @@ const PartnersCard = React.memo(() => {
   return (
     <>
       <div className="description-container bg-white/5 p-4 md:p-6 flex-1 rounded-lg border border-blueGray/20 h-full">
-        <h2 className='text-xl md:text-2xl mb-4 md:mb-6 text-center text-lightBlue font-bold'>
+        <h2 className="text-xl md:text-2xl mb-4 md:mb-6 text-center text-lightBlue font-bold">
           Con las siguientes compañías:
         </h2>
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4 justify-items-center">
           {PartnersLogos.map((partner, index) => (
-            <div 
-              key={partner.id} 
+            <div
+              key={partner.id}
               className="w-full h-20 sm:w-full sm:h-20 md:w-full md:h-24 flex items-center justify-center bg-blueGray/90 rounded-lg hover:bg-blueGray/100 transition-all duration-300 cursor-pointer transform hover:scale-105 shadow-lg"
               onClick={() => handlePartnerClick(partner, index)}
             >
               <img
-                className='w-full h-full object-contain p-2 sm:p-2 md:p-3'
+                className="w-full h-full object-contain p-2 sm:p-2 md:p-3"
                 src={partner.logo}
                 alt={`Logo of ${partner.name}`}
               />
@@ -48,7 +48,7 @@ const PartnersCard = React.memo(() => {
         </div>
       </div>
       {selectedPartnerIndex !== null && (
-        <PartnerBenefitsModal 
+        <PartnerBenefitsModal
           partner={PartnersLogos[selectedPartnerIndex]}
           onClose={handleCloseModal}
           onNext={handleNext}

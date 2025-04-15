@@ -7,23 +7,23 @@ const WhoWeAre = () => {
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 300);
-    
+
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <section className="w-full py-4 md:py-8 px-4 md:px-8 bg-gradient-to-b from-[#03070f] to-[#253878]/10">
-      <div 
-        className={`max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 transition-all duration-1000 ease-in-out transform ${
+    <section className="w-full py-4 md:py-6 px-4 md:px-8 bg-gradient-to-b from-[#03070f] to-[#253878]/10 mt-0"> {/* Reduced padding and removed top margin */}
+      <div
+        className={`max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 transition-all duration-1000 ease-in-out transform ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}
       >
-        <div 
+        <div
           className={`w-full md:w-1/2 aspect-[4/3] md:aspect-[16/9] lg:aspect-[4/3] relative rounded-2xl overflow-hidden shadow-2xl transition-all duration-1000 delay-300 ease-in-out transform ${
             isVisible ? 'scale-100' : 'scale-95'
           }`}
         >
-          <img 
+          <img
             src="https://res.cloudinary.com/dr8pwzxzn/image/upload/v1742829738/photo_5086826439680044633_x_fyhzt9.jpg"
             alt="Quién Nos Respalda"
             className="absolute inset-0 w-full h-full object-cover object-center"
@@ -31,8 +31,8 @@ const WhoWeAre = () => {
           />
         </div>
 
-        <div 
-          className={`w-full md:w-1/2 space-y-6 md:space-y-8 transition-all duration-1000 delay-500 ease-in-out transform ${
+        <div
+          className={`w-full md:w-1/2 space-y-4 md:space-y-6 transition-all duration-1000 delay-500 ease-in-out transform ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
           }`}
         >
@@ -44,8 +44,8 @@ const WhoWeAre = () => {
             </h2>
             <div className="space-y-4 md:space-y-6">
               <p className="text-base md:text-lg lg:text-xl text-[#d3dde6] leading-relaxed">
-                <a 
-                  href="#" 
+                <a
+                  href="#"
                   className="text-[#44b0de] hover:text-[#3a9ecb] transition-colors duration-300"
                 >
                   Maschio y Asoc.
@@ -54,11 +54,11 @@ const WhoWeAre = () => {
                 <span className="text-[#f7d16e] font-semibold">
                   Grupo Baioni Internacional
                 </span>{' '}
-                – Broker líder con más de 40 años de experiencia en el mercado con 
+                – Broker líder con más de 40 años de experiencia en el mercado con
                 profesionales altamente capacitados.
               </p>
               <p className="text-base md:text-lg lg:text-xl text-[#d3dde6] leading-relaxed">
-                Logrando así un aliado estratégico que brinda respaldo a nuestro 
+                Logrando así un aliado estratégico que brinda respaldo a nuestro
                 canal de comercialización.
               </p>
             </div>

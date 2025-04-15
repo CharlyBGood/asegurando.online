@@ -4,11 +4,14 @@ import PartnersCard from './PartnersCard';
 
 const PartnerSection = React.memo(() => {
   return (
-    <div className='bg-bgDarkBlue flex flex-col lg:flex-row justify-start items-start gap-8 p-6 mx-2 my-4 min-h-[80vh]'>
-      <div className="w-full lg:w-1/2">
+    <div className="bg-bgDarkBlue flex flex-col lg:flex-row justify-between items-start gap-6 p-4 md:p-6 mx-auto my-4 max-w-7xl min-h-[70vh]">
+      {/* Call to Action Section */}
+      <div className="w-full lg:w-1/2 flex justify-center">
         <CallToActionSection />
       </div>
-      <div className="w-full lg:w-1/2">
+
+      {/* Partners Card Section */}
+      <div className="w-full lg:w-1/2 flex justify-center">
         <PartnersCard />
       </div>
     </div>
