@@ -27,7 +27,7 @@ const WhoWeAre = () => {
             experiencia en el mercado con profesionales altamente capacitados.
           </p>
           <p className="text-blueGray text-base md:text-lg text-left leading-relaxed max-w-xl">
-            Encontramos así un aliado estratégico que brinda respaldo a nuestro canal de
+            Logrando así un aliado estratégico que brinda respaldo a nuestro canal de
             comercialización.
           </p>
         </div>
